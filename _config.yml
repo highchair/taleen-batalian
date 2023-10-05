@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values which you are expected to set up once 
+# and rarely edit after that. If you find yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
+# If you change this file, restart the server process.
+
+# Site settings
+#   These are used to personalize your new site. If you look in the HTML files, you will see them accessed via 
+#   {{ site.title }}, {{ site.email }}, and so on. You can create any custom variable you would like, and they 
+#   will be accessible in the templates via {{ site.myvariable }}.
+
+title: Taleen Batalian
+description: Personal portfolio of sculpture, painting, and multimedia exhibitions
+instagram: "https://www.instagram.com/taleenbatalian/"
+
+github_username: jhogue
+github_repo: "https://github.com/highchair/taleen-batalian"
+
+#baseurl: "/newsite" # the subpath of your site, e.g. /blog
+baseurl: "/"
+port: 5070
+url: "http://127.0.0.1:5070" # the base hostname & protocol for your site, e.g. http://example.com
+prod_url: "http://taleenbatalian.com" # should not end with a slash
+destination: _site/
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM 
+
+
+# permalink: /:categories/:year/:month/:day/:title:output_ext
+permalink: /:categories/:title/
+relative_permalinks: false
+image_path: "/assets/img/"
+
+collections:
+  sculpture:
+    output: true
+    permalink: /sculpture/:name/
+  painting:
+    output: true
+    permalink: /painting/:name/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Plugins and extras
+# plugins:
+
+
+# Exclude from processing.
+exclude:
+  - .git/
+  - .gitignore
+  - .nova/
+  - LICENSE
+  - README.md
