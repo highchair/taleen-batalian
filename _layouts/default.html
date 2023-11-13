@@ -1,0 +1,54 @@
+{% if page.width == '' %}
+  {% assign width = 'false' %}
+{% else %}
+  {% assign width = page.width %}
+{% endif %}
+<!doctype HTML>
+<html lang="en">
+  {% include head.html %}
+  <body class="l l--{{ page.layout }}{% if page.body-class %} page--{{ page.body-class }}{% endif %} no-js">
+    <a href="#content" class="skip-link u__sr-only u__sr-only--focusable">Skip to Content</a>
+
+    <header id="top" class="c c--max u__gutter__p">
+      <div class="c__sticky">
+        <a class="brand h2" href="{% link index.html %}">
+          <img class="brand__logo" src="{% link assets/images/tb_logo-2016.jpg %}" alt="{{ site.title }}" />
+        </a>
+        <nav class="n n--top" aria-label="Primary">
+          <button class="n__toggler js__expand-collapse" type="button" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="n__toggler__label">
+              <span class="navicon" aria-hidden="true">&equiv;</span>
+              <span class="close" aria-hidden="true">&times;</span> Menu
+            </span>
+          </button>
+          {% include navigation.html top='Yes' %}
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" aria-label="Content" class="u__gutter__p u__vertical__p" tabindex="0">
+      <article class="c c--max u__vertical__p{% if width == 'text' %} v-rhythm c--text{% endif %}">
+
+        {{ content }}
+
+      </article>
+    </main>
+
+    <footer class="c sf u__gutter__p u__vertical__p">
+      <div class="c--max">
+        <p class="btt">
+          <a href="#top" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512"><path d="M278.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-192 192c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 109.3 425.4 278.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-192-192zm192 384l-192-192c-12.5-12.5-32.8-12.5-45.3 0l-192 192c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 301.3 425.4 470.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>
+            <span class="u__sr-only">Back to Top</span>
+          </a>
+        </p>
+        <p class="u__text__center u__rhythm u__a__no-under">
+          <a href="tel:401-529-9479">401.529.9479</a> / Providence, RI / <a href="mailto:taleen@taleenbatalian.com">taleen@taleenbatalian.com</a>
+        </p>
+        <p class="u__text__center copyright"><small>All work copyright ©{{ 'now' | date: '%Y' }} {{ site.title }}<br /> and respective artists and authors.</small></p>
+      </div>
+    </footer>
+
+    {% include scripts.html %}
+  </body>
+</html>

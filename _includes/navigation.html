@@ -1,0 +1,51 @@
+  <ul {% if include.top == "Yes" %}id="mainmenu" class="menu aria-expand" {% endif %}role="list">
+    <li>
+      <a href="#"><b>Exhibitions</b></a>
+      {% comment %}<ul class="menu__sub">
+        <li><a href="#">Tender Cargo</a></li>
+        <li><a href="#">Graft</a></li>
+      </ul>{% endcomment %}
+    </li>
+    <li>
+      <a href="#"><b>Film & Performance</b></a>
+      {% comment %}<ul class="menu__sub">
+        <li><a href="#">Tender Cargo</a></li>
+        <li><a href="#">Fringe PVD</a></li>
+        <li><a href="#">Waves & Shadows</a></li>
+        <li><a href="#">Disassemble</a></li>
+      </ul>{% endcomment %}
+    </li>
+    <li>
+      <a href="{% link 3d/2022.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>
+        <b><span aria-hidden="true">3D</span><span class="u__sr-only">Three dimensional</span></b>
+      </a>
+    </li>
+    <li>
+      <!-- We have two current pages with this pattern. Needs to be fixed -->
+      <a href="{% link 2d/index.html %}"{% if page.permalink == '2d/' %} aria-current="page"{% endif %}{% if page.permalink contains '2d' %} class="parent"{% endif %}>
+        <b><span aria-hidden="true">2D</span><span class="u__sr-only">Two dimensional</span></b>
+      </a>
+      <ul class="menu__sub">
+        {% assign twod_items = site.pages | where: 'section', '2d' | reverse %}
+        {% for item in twod_items %}
+          {% if item.nav_title %}
+          <li><a href="{{ item.permalink | relative_url }}"{% if page.permalink == item.permalink %} aria-current="page"{% endif %}>{{ item.nav_title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% comment %}
+        <li><a href="{% link 2d/2021-2022.html %}"{% if page.permalink contains '2021-2022' %} aria-current="page"{% endif %}>2021-2022</a></li>
+        <li><a href="{% link 2d/2018-2020.html %}"{% if page.permalink contains '2018-2020' %} aria-current="page"{% endif %}>2018-2020</a></li>
+        <li><a href="{% link 2d/2016-2017.html %}"{% if page.permalink contains '2016-2017' %} aria-current="page"{% endif %}>2016-2017</a></li>
+        <li><a href="{% link 2d/2014-2015.html %}"{% if page.permalink contains '2014-2015' %} aria-current="page"{% endif %}>2014-2015</a></li>
+        <li><a href="{% link 2d/2011-2012.html %}"{% if page.permalink contains '2011-2012' %} aria-current="page"{% endif %}>2011-2012</a></li>
+        <li><a href="{% link 2d/2009-2010.html %}"{% if page.permalink contains '2009-2010' %} aria-current="page"{% endif %}>2009-2010</a></li>
+        <li><a href="{% link 2d/2007-2008.html %}"{% if page.permalink contains '2007-2008' %} aria-current="page"{% endif %}>2007-2008</a></li>
+        {% endcomment %}
+      </ul>
+    </li>
+    <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>About: Statement & Resume</a></li>
+    <li><a href="{% link exhibitions.md %}"{% if page.permalink contains 'exhibitions' %} aria-current="page"{% endif %}>Upcoming exhibitions</a></li>
+    <li><a href="//blog.taleenbatalian.com/?page_id=20">Classes and workshops</a></li>
+    <li><a href="#">Contact the artist</a></li>
+    <li><a href="https://www.instagram.com/taleenbatalian/" target="_blank" title="Opens new window">Follow on Instagram</a></li>
+  </ul>

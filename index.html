@@ -1,0 +1,106 @@
+---
+layout: default
+title: Welcome to the Portfolio of
+description: 
+permalink: /
+body-class: home
+meta-image:
+---
+
+<h1 class="u__sr-only">{{ site.title }}</h1>
+<p class="u__sr-only">Browse Taleen’s portfolio by type of work</p>
+
+<nav class="u__vertical__pb" aria-label="Portfolio Types">
+  <ul class="g">
+    <li class="gc--6 u__img-hov-exp">
+      <div class="u__rhythm--sm u__img-border">
+        <div class="u__img-wrap">
+          <img class="" src="{% link assets/home/exhibitions-2023-01.jpg %}" alt="" />
+        </div>
+      </div>
+      <h3 class="u__text__center h4">
+        <a href="#">
+          Exhibitions
+        </a>
+        {% comment %}
+        <a href="{% link _painting/sculpture-and-shadow.html %}">Shadow Paintings</a>
+        {% endcomment %}
+      </h3>
+    </li>
+    <li class="gc--6 u__img-hov-exp">
+      <div class="u__rhythm--sm u__img-border">
+        <div class="u__img-wrap">
+          <img class="" src="{% link assets/home/film-performance-2023-01.jpg %}" alt="" />
+        </div>
+      </div>
+      <h3 class="u__text__center h4">
+        <a href="#">
+          Film & Performance
+        </a>
+      </h3>
+    </li>
+    <li class="gc--6 u__img-hov-exp">
+      <div class="u__rhythm--sm u__img-border">
+        <div class="u__img-wrap">
+          <img class="" src="{% link assets/home/3d-2023-01.jpg %}" alt="" />
+        </div>
+      </div>
+      <h3 class="u__text__center h4">
+         <a href="{% link 3d/2022.html %}">
+           <span aria-hidden="true">3D</span><span class="u__sr-only">Three dimensional</span>
+         </a>
+      </h3>
+    </li>
+    <li class="gc--6 u__img-hov-exp">
+      <div class="u__rhythm--sm u__img-border">
+        <div class="u__img-wrap">
+          <img class="" src="{% link assets/home/2d-2023-01.jpg %}" alt="" />
+        </div>
+      </div>
+      <h3 class="u__text__center h4">
+         <a href="{% link 2d/index.html %}">
+           <span aria-hidden="true">2D</span><span class="u__sr-only">Two dimensional</span>
+         </a>
+      </h3>
+    </li>
+  </ul>
+</nav>
+
+<section class="u__vertical__p">
+  <div class="">
+    <h2 class="u__rhythm">About</h2>
+  </div>
+  <div class="">
+    <p class="u__rhythm">Taleen Batalian is an artist and educator. Her work explores emotional landscapes and ways in which the body can serve as a vehicle for carrying experiences and memories through complex terrain.</p>
+    <p>
+      <a class="btn" href="{% link about.md %}#readmore"">Statement & Resume</a>
+    </p>
+  </div>
+</section>
+
+{% comment %}
+<section class="g u__vertical__p">
+  <div class="gc--md--3">
+    <h2 class="u__text__center u__text__left--md">News</h2>
+  </div>
+
+  <div class="gc--md--9">
+    {% assign newpost = site.posts.first %}
+    <p class="u__rhythm u__text__center u__text__left--md"><strong>{{ newpost.title }}</strong> — {{ newpost.content | strip_html | truncatewords: 36 }} </p>
+    <p class="u__text__center u__text__left--md"><a class="btn" href="/news#{{ newpost.title | slugify }}">Read Full Post</a></p>
+  </div>
+</section>
+
+<section class="g u__vertical__pt u__no-js">
+  <div class="gc--lg--3">
+    <h2 class="u__text__center u__text__left--md">Instagram</h2>
+    <p class="h4 u__text__center u__text__left--md"><a href="{{ site.instagram }}" target="_blank" title="Opens in a new window" rel="noopener noreferrer">@elizabethkeithline</a></p>
+  </div>
+  <div class="gc--lg--9">
+      Authenticated July 20, 2022 at https://app.behold.so/
+      Account with highchairdesignhaus@gmail.com as the email
+    <div data-behold-id="r6O4eLonLfAdYUIFG1RP"></div>
+  </div>
+</section>
+<script src="https://w.behold.so/widget.js" type="module"></script>
+{% endcomment %}

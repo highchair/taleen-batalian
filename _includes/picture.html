@@ -1,0 +1,5 @@
+<picture>
+  <source media="(max-width: 432px)" srcset="{{ include.filepath | prepend: site.baseurl }}-sm.jpg">
+  <source media="(min-width: 433px)" srcset="{{ include.filepath | prepend: site.baseurl }}-lg.jpg">
+  <img src="{{ include.filepath | prepend: site.baseurl }}-lg.jpg" alt="{{ include.alt }}" loading="lazy" decoding="async">
+</picture>

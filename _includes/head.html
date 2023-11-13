@@ -1,0 +1,59 @@
+{% comment %}
+  The page_title is set in a simple way: 
+  • Default is the Site title
+  • If there is a meta title present, it overrides the page title, and the site title is appended
+  • If there is not, the page title is appended with the site title
+
+  Example in a page:
+  title: 'Two dimensional work'
+  meta_title: '2007–2008 | Two dimensional work'
+  The page_title will render as '2007–2008 | Two dimensional work | Taleen Batalian'
+{% endcomment %}
+{%- assign meta_title = site.title -%}
+{%- assign meta_title_trailer = site.title | prepend: ' | ' -%}
+{%- comment -%}Default: "| Taleen Batalian"{%- endcomment -%}
+{%- comment -%}If there is a meta_title value:{%- endcomment -%}
+{%- if page.meta_title -%}
+  {% assign meta_title = page.meta_title | append: meta_title_trailer %}
+{% elsif page.title %}
+  {% assign meta_title = page.title | append: meta_title_trailer %}
+{%- endif -%}
+{%- assign meta_description = site.description -%}
+{%- if page.description -%}
+  {% assign meta_description = page.description %}
+{%- endif -%}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,500;1,300&display=swap" rel="stylesheet">
+
+    <title>{{ meta_title }}</title>
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta name="description" content="{{ meta_description }}">
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
+    {% if page.meta_image %}<meta property="og:image" content="{{ site.image_path }}{{ page.meta_image }}">{% endif %}
+    <link rel="stylesheet" type="text/css" href="{% link assets/css/main.scss %}?cb={{ 'now' | date: '%Y%m%f-%H%M' }}">
+
+    {% comment %}
+    <link rel="icon" href="{% link favicon.ico %}" sizes="any">
+    <link rel="icon" href="{% link favicon.svg %}" type="image/svg+xml">
+    <link rel="manifest" href="{% link site.webmanifest %}">
+    <link rel="mask-icon" href="{% link safari-pinned-tab.svg %}" color="#291f19">
+    <meta name="msapplication-TileColor" content="#291f19">
+    <meta name="theme-color" content="#291f19">
+    {% endcomment %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGDVBV384X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BGDVBV384X');
+    </script>
+    -->
+  </head>
