@@ -1,0 +1,49 @@
+# Two dimensional work
+
+# - slug: 
+#   title: ''
+#   year: 2022
+#   caption: ''
+#   sold: no
+
+- slug: tender-cargo
+  title: 'Tender Cargo'
+  year: 2022
+  caption: 'Cotton, wool, felt, ink, paillettes, batting, 72&quot; x 44&quot; x 34&quot;'
+  sold: no
+
+- slug: untitled-albatross
+  title: 'Untitled (Albatross)'
+  year: 2022
+  caption: 'Plaster cloth, paper, tape, gesso, 25&quot; x 21&quot; x 23&quot;'
+  sold: no
+
+- slug: transcendental-garment
+  title: 'Transcendental Garment'
+  year: 2022
+  caption: 'Cotton, ink, paillettes, gesso, 72&quot; x 35&quot; x 30&quot;'
+  sold: no
+
+- slug: transcendental-garment-detail
+  title: 'Transcendental Garment'
+  year: 2022
+  caption: '(detail)'
+  sold: no
+
+- slug: untitled-protrusions
+  title: 'Untitled (Protrusions)'
+  year: 2022
+  caption: 'Cotton, plaster cloth, paper, tape, gesso, 54&quot; x 20&quot; x 18&quot;'
+  sold: no
+
+- slug: allegory
+  title: 'Allegory'
+  year: 2022
+  caption: 'Mixed textiles, 120&quot; x 98&quot; x 12&quot;'
+  sold: no
+
+- slug: gray-cargo
+  title: 'Gray Cargo'
+  year: 2022
+  caption: 'Cotton, wool, felt, batting 72&quot; x 45&quot; x 30&quot;'
+  sold: no
