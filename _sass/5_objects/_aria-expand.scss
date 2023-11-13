@@ -1,0 +1,24 @@
+.aria-expand {
+  opacity: 0;
+  max-height: 0;
+  transition-property: opacity, max-height, visibility;
+  transition-duration: 500ms, 250ms, 0ms;
+  transition-timing-function: ease, linear, linear;
+  transition-delay: 0ms, 250ms, 500ms;
+  visibility: hidden;
+
+  // When a button click reveals another element
+  // this class is present on "open" and removed on "close"
+  &.js__aria-expanded {
+    opacity: 1;
+    max-height: 50rem; // 800px 
+    transition-delay: 0ms, 0ms;
+    visibility: visible;
+  }
+
+  // To prevent FOUC, we show this element when Javascript is off
+  //.no-js & {
+  //  opacity: 1;
+  //  max-height: none;
+  //}
+}

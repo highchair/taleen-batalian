@@ -1,0 +1,30 @@
+//
+// Color system
+//
+
+$white: #fff;
+$black: #232122;
+
+// https://coolors.co/993333-586994-cde6f5
+$colors: (
+  'brand-white': #f3f3f3,
+  'brand-gray': #efefef,
+  'brand-light-blue': #CDE6F5,
+  'brand-blue': #586994,
+  'brand-red': #913030,
+);
+
+// Color getter
+@function palette($color) {
+  @return map-get($colors, $color);
+}
+
+// Generic variables
+$color__body-fg: $black;
+$color__body-bg: $white;
+
+$color__link: palette('brand-red');
+$color__link--hover: $black;
+$color__link-bg: rgba($black, 0.25);
+$color__link--active: palette('brand-red');
+$color__borders: palette('brand-gray');

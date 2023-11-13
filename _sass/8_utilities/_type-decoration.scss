@@ -1,0 +1,44 @@
+.u {
+
+  &__lead {
+    // font size in 4_elements/typography
+  }
+
+  // Anchors
+  // As something around the anchor elements
+  &__a__no-under {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__infobox {
+    background-color: $white;
+    border: 1px solid $color__borders;
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+
+    > * + * {
+      margin-top: $vertical-rhythm;
+    }
+
+    @include breakpoint-up(large) {
+      margin-inline-start: -2rem;
+      margin-inline-end: -2rem;
+      padding: 2rem;
+    }
+  }
+
+  &__css-col {
+    &--two {
+      columns: 280px 2;
+      column-gap: 2em;
+    }
+  }
+
+  &__list-space {
+    li {
+      margin-top: math.div($vertical-rhythm, 2);
+    }
+  }
+}

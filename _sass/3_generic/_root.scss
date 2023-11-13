@@ -1,0 +1,74 @@
+$base-min: math.div(16, 16);
+$base-max: math.div(18, 16);
+$base-sm: math.div(14, 16);
+
+:root {
+
+  // Fluid Type sizes
+  --vp__min: #{$min-vw};
+  --vp__max: #{$max-vw};
+  --fs__min: #{$base-min};
+  --fs__max: #{$base-max};
+  --fs__sm: #{$base-sm};
+}
+
+small {
+  --fs__sm: #{$base-sm};
+}
+
+// Fallback variables for Sass
+$h6-min: math.div(18, 16);
+$h6-max: math.div(20, 16);
+
+h6,
+.h6,
+.u__lead {
+  --fs__min: #{$h6-min};
+  --fs__max: #{$h6-max};
+}
+
+$h5-min: math.div(20, 16);
+$h5-max: math.div(25, 16);
+
+h5,
+.h5,
+dt {
+  --fs__min: #{$h5-min};
+  --fs__max: #{$h5-max};
+}
+
+$h4-min: math.div(23, 16);
+$h4-max: math.div(31, 16);
+
+h4,
+.h4 {
+  --fs__min: #{$h4-min};
+  --fs__max: #{$h4-max};
+}
+
+$h3-min: math.div(26, 16);
+$h3-max: math.div(38, 16);
+
+h3,
+.h3 {
+  --fs__min: #{$h3-min};
+  --fs__max: #{$h3-max};
+}
+
+$h2-min: math.div(29, 16);
+$h2-max: math.div(47, 16);
+
+h2,
+.h2 {
+  --fs__min: #{$h2-min};
+  --fs__max: #{$h2-max};
+}
+
+$h1-min: math.div(33, 16);
+$h1-max: math.div(58, 16);
+
+h1,
+.h1 {
+  --fs__min: #{$h1-min};
+  --fs__max: #{$h1-max};
+}

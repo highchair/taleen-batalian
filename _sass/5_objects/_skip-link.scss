@@ -1,0 +1,18 @@
+// <a href="#content" class="skip-link u__sr-only u__sr-only--focusable">Skip to Content</a>
+.skip-link:focus {
+  background-color: $color__body-fg;
+  color: $color__body-bg;
+  display: block;
+  padding: 0.625em 1.25em 0.75em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: z(main);
+  
+  @include breakpoint-up(small) {
+    position: absolute !important;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

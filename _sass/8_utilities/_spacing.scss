@@ -1,0 +1,241 @@
+// General global styles
+
+.u__rhythm--sm {
+  margin-bottom: $vertical-rhythm * 0.5;
+}
+.u__rhythm {
+  margin-bottom: $vertical-rhythm;
+}
+.u__rhythm--md {
+  margin-bottom: $vertical-rhythm * 1.5;
+}
+.u__rhythm--lg {
+  margin-bottom: $vertical-rhythm * 2;
+}
+
+// Static spacing
+.u__ss__p--sm,
+.u__ss__pt--sm {
+  padding-top: $vertical-min * 0.5rem;
+}
+.u__ss__p--sm,
+.u__ss__pb--sm {
+  padding-bottom: $vertical-min * 0.5rem;
+}
+.u__ss__p--md,
+.u__ss__pt--md {
+  padding-top: $vertical-min * 1rem;
+}
+.u__ss__p--md,
+.u__ss__pb--md {
+  padding-bottom: $vertical-min * 1rem;
+}
+.u__ss__p--lg,
+.u__ss__pt--lg {
+  padding-top: $vertical-min * 1.5rem;
+}
+.u__ss__p--lg,
+.u__ss__pb--lg {
+  padding-bottom: $vertical-min * 1.5rem;
+}
+
+.u__ss__m--sm,
+.u__ss__mt--sm {
+  margin-top: $vertical-min * 0.5rem;
+}
+.u__ss__m--sm,
+.u__ss__mb--sm {
+  margin-bottom: $vertical-min * 0.5rem;
+}
+.u__ss__m--md,
+.u__ss__mt--md {
+  margin-top: $vertical-min * 1rem;
+}
+.u__ss__m--md,
+.u__ss__mb--md {
+  margin-bottom: $vertical-min * 1rem;
+}
+.u__ss__m--lg,
+.u__ss__mt--lg {
+  margin-top: $vertical-min * 1.5rem;
+}
+.u__ss__m--lg,
+.u__ss__mb--lg {
+  margin-bottom: $vertical-min * 1.5rem;
+}
+
+
+// Fluid spacing
+// Gutters: horizontal spacing
+%fluid-gutter-p {
+  @include fluid-units('padding-inline-start' 'padding-inline-end', $gutter-min, $gutter-max, $spacing__min-vw, $spacing__max-vw);
+}
+
+%fluid-gutter-ps {
+  @include fluid-units('padding-inline-start', $gutter-min, $gutter-max, $spacing__min-vw, $spacing__max-vw);
+}
+
+%fluid-gutter-pe {
+  @include fluid-units('padding-inline-end', $gutter-min, $gutter-max, $spacing__min-vw, $spacing__max-vw);
+}
+
+// Flexible gutter helper
+%fluid-gutter-ms {
+  @include fluid-units('margin-inline-start', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+%fluid-gutter-me {
+  @include fluid-units('margin-inline-end', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+// Classes for left and right (start and end)
+.u__gutter__p {
+  @extend %fluid-gutter-p;
+  
+  &s {
+    @extend %fluid-gutter-ps;
+  }
+  
+  &e {
+    @extend %fluid-gutter-pe;
+  }
+}
+
+.u__gutter__m {
+  
+  &s {
+    @extend %fluid-gutter-me;
+  }
+  
+  &e {
+    @extend %fluid-gutter-ms;
+  }
+}
+
+
+// Vertical rhythm
+%fluid-vertical-p {
+  @include fluid-units(
+    'padding-top' 'padding-bottom', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+%fluid-vertical-m {
+  @include fluid-units(
+    'margin-top' 'margin-bottom', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+%fluid-vertical-pt {
+  @include fluid-units(
+    'padding-top', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+%fluid-vertical-mt {
+  @include fluid-units(
+    'margin-top', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+%fluid-vertical-pb {
+  @include fluid-units(
+    'padding-bottom', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+%fluid-vertical-mb {
+  @include fluid-units(
+    'margin-bottom', $vertical-min, $vertical-max, $spacing__min-vw, $spacing__max-vw
+  );
+}
+
+// Classes for top and bottom
+.u__vertical__p {
+  @extend %fluid-vertical-p;
+
+  &t {
+    @extend %fluid-vertical-pt;
+  }
+
+  &b {
+    @extend %fluid-vertical-pb;
+  }
+}
+
+.u__vertical__m {
+  @extend %fluid-vertical-m;
+
+  &t {
+    @extend %fluid-vertical-mt;
+  }
+
+  &b {
+    @extend %fluid-vertical-mb;
+  }
+}
+
+// Zero out Spacing
+.u__p {
+  &t--0, &x--0 { padding-top: 0 !important; }
+  &b--0, &x--0 { padding-bottom: 0 !important; }
+  &s--0, &y--0 { padding-inline-start: 0 !important; }
+  &e--0, &y--0 { padding-inline-end: 0 !important; }
+
+  @include breakpoint-up(small) {
+    &t--sm--0, &x--sm--0 { padding-top: 0 !important; }
+    &b--sm--0, &x--sm--0 { padding-bottom: 0 !important; }
+    &s--sm--0, &y--sm--0 { padding-inline-start: 0 !important; }
+    &e--sm--0, &y--sm--0 { padding-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(medium) {
+    &t--md--0, &x--md--0 { padding-top: 0 !important; }
+    &b--md--0, &x--md--0 { padding-bottom: 0 !important; }
+    &s--md--0, &y--md--0 { padding-inline-start: 0 !important; }
+    &e--md--0, &y--md--0 { padding-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(large) {
+    &t--lg--0, &x--lg--0 { padding-top: 0 !important; }
+    &b--lg--0, &x--lg--0 { padding-bottom: 0 !important; }
+    &s--lg--0, &y--lg--0 { padding-inline-start: 0 !important; }
+    &e--lg--0, &y--lg--0 { padding-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(x-large) {
+    &t--xl--0, &x--xl--0 { padding-top: 0 !important; }
+    &b--xl--0, &x--xl--0 { padding-bottom: 0 !important; }
+    &s--xl--0, &y--xl--0 { padding-inline-start: 0 !important; }
+    &e--xl--0, &y--xl--0 { padding-inline-end: 0 !important; }
+  }
+}
+
+.u__m {
+  &t--0, &x--0 { margin-top: 0 !important; }
+  &b--0, &x--0 { margin-bottom: 0 !important; }
+  &s--0, &y--0 { margin-inline-start: 0 !important; }
+  &e--0, &y--0 { margin-inline-end: 0 !important; }
+
+  @include breakpoint-up(small) {
+    &t--sm--0, &x--sm--0 { margin-top: 0 !important; }
+    &b--sm--0, &x--sm--0 { margin-bottom: 0 !important; }
+    &s--sm--0, &y--sm--0 { margin-inline-start: 0 !important; }
+    &e--sm--0, &y--sm--0 { margin-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(medium) {
+    &t--md--0, &x--md--0 { margin-top: 0 !important; }
+    &b--md--0, &x--md--0 { margin-bottom: 0 !important; }
+    &s--md--0, &y--md--0 { margin-inline-start: 0 !important; }
+    &e--md--0, &y--md--0 { margin-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(large) {
+    &t--lg--0, &x--lg--0 { margin-top: 0 !important; }
+    &b--lg--0, &x--lg--0 { margin-bottom: 0 !important; }
+    &s--lg--0, &y--lg--0 { margin-inline-start: 0 !important; }
+    &e--lg--0, &y--lg--0 { margin-inline-end: 0 !important; }
+  }
+  @include breakpoint-up(x-large) {
+    &t--xl--0, &x--xl--0 { margin-top: 0 !important; }
+    &b--xl--0, &x--xl--0 { margin-bottom: 0 !important; }
+    &s--xl--0, &y--xl--0 { margin-inline-start: 0 !important; }
+    &e--xl--0, &y--xl--0 { margin-inline-end: 0 !important; }
+  }
+}

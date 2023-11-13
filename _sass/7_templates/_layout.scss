@@ -1,0 +1,107 @@
+// Layout
+
+.l {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  > header {
+    background-color: $color__body-bg;
+
+    @include breakpoint-down($mobile-to-desktop-nav) {
+      display: flex;
+      flex-flow: row nowrap;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: z(header);
+
+      & > div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    nav {
+      margin-inline-start: auto;
+
+      @include breakpoint-up($mobile-to-desktop-nav) {
+        margin-top: $vertical-rhythm;
+      }
+    }
+  }
+
+  > main {
+    width: 100%;
+
+    @include breakpoint-down($mobile-to-desktop-nav) {
+      // To account for the sticky header
+      margin-top: rem(54);
+      z-index: z(main);
+    }
+  }
+
+  > footer {
+    background-color: palette('brand-gray');
+    margin-top: auto;
+    width: 100%;
+  }
+
+  // Layout shift for larger screens
+  // The top navigation becomes a left sidebar
+  @include breakpoint-up($mobile-to-desktop-nav) {
+    flex-flow: row wrap;
+    
+    > header {
+      flex: 0 0 33%;
+      position: relative;
+      width: auto;
+    }
+
+    > main {
+      flex: 0 0 67%;
+      max-width: none; // resets a style coming from .c--max
+      width: auto;
+    }
+
+    > footer {
+      flex: 0 0 100%;
+    }
+  }
+
+  @include breakpoint-up(x-large) {
+
+    > header {
+      flex: 0 0 25%;
+    }
+
+    > main {
+      flex: 0 1 75%;
+    }
+  }
+
+  @include breakpoint-up(xx-large) {
+  
+    > header {
+      flex: 1 0 rem(320);
+    }
+
+    > main {
+      flex: 1 0 calc(100% - rem(320));
+    }
+  }
+}
+
+.copyright {
+
+  @include breakpoint-up($mobile-to-desktop-nav) {
+    br {
+      @include hide;
+    }
+  }
+}

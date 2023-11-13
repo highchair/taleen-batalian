@@ -1,0 +1,61 @@
+$breakpoints: (
+  // List as unitless pixels
+  base: 440,  // 600-440= 160
+  small: 600,  // 760-600= 160
+  medium: 760,  // 960-760= 200
+  large: 960,  // 1180-960= 220
+  x-large: 1180, // 1420-1180 = 240
+  xx-large: 1420  //
+);
+
+// Helpers
+@function bp($bp) {
+  @return map-get($breakpoints, $bp);
+}
+
+// Breakpoint mixins
+@mixin breakpoint-up($bp) {
+  @media (min-width: #{ em( bp($bp) ) }) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($bp) {
+  @media (max-width: #{ em( (bp($bp) - 1) ) }) {
+    @content;
+  }
+}
+
+// List for looping over breakpoints
+// How to use:
+// @each $short, $bp in $breakpoint-list {
+//   @if $bp != none {
+//     @include breakpoint-up($bp) {
+//       &__class#{$short} {
+//         property: setting;
+//       }
+//     }
+//   } @else {
+//     &__class {
+//       property: setting;
+//     }
+//   }
+// }
+$breakpoint-list: ('': none, '--sm': small, '--md': medium, '--lg': large, '--xl': x-large);
+
+// Global shared breakpoints
+$mobile-to-desktop-nav: medium;
+
+// For responsive typography
+// Declare a minimum and maximum viewport size for fluidity to happen within
+$min-vw: math.div(bp('base'), 16);
+$max-vw: math.div(bp('x-large'), 16);
+
+// Maximum widths
+$max-widths: (
+  base: 1000,
+  text: 720
+);
+
+$max-width: #{rem(map-get($max-widths, base))};
+$max-width__text: #{em(map-get($max-widths, text))};

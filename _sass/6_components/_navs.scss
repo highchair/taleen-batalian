@@ -1,0 +1,180 @@
+// Navigations
+
+$nav-v-padding: 1rem;
+$nav-h-padding: 0.5rem;
+$nav-height: em(62px);
+
+.brand {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &__logo {
+    width: rem(100);
+  }
+
+  // Bottom/Footer
+  footer & {
+    text-align: center;
+  }
+}
+
+.n {
+  @include breakpoint-down($mobile-to-desktop-nav) {
+    text-align: center;
+  }
+
+  // Any link
+  a {
+    @include breakpoint-down($mobile-to-desktop-nav) {
+      padding: $nav-v-padding $nav-h-padding;
+    }
+
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      display: inline-block;
+      padding: $nav-v-padding 1rem;
+    }
+  }
+
+  li {
+    line-height: 1.25;
+  }
+
+  > ul > li {
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      margin-left: - $nav-h-padding;
+    }
+
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      margin-left: -1rem;
+    }
+  }
+
+  li > a {
+    background-color: transparent;
+
+    @include hover-focus() {
+      background-color: rgba($color__link, 0.25);
+    }
+
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      @include hover-focus() {
+        background-color: $white;
+      }
+    }
+
+    &[aria-current] {
+      @include breakpoint-down($mobile-to-desktop-nav) {
+        background-color: rgba($color__link, 0.25);
+        color: $black;
+        cursor: default;
+      }
+
+      @include breakpoint-up($mobile-to-desktop-nav) {
+        color: $black;
+
+        &::after {
+          content: ' >'
+        }
+      }
+    }
+  }
+
+  // Button
+  &__toggler {
+    @include button-reset();
+    background-color: transparent;
+    padding: 1.25rem 1rem;
+    margin-right: -1rem;
+    transition: $transition;
+
+    @include hover-focus() {
+      background-color: rgba($color__link, 0.25);
+    }
+
+    &[aria-expanded=true],
+    &:active {
+      background-color: rgba($color__link, 0.25);
+      color: $black;
+    }
+
+    // Swap icons
+    &[aria-expanded=false] {
+      .close {
+        @include hide;
+      }
+    }
+
+    &[aria-expanded=true] {
+      .navicon {
+        @include hide;
+      }
+      .close {
+        @include show(inline);
+      }
+    }
+
+    &__label {
+      white-space: nowrap;
+    }
+
+    // Breakpoint
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      @include hide;
+
+      + .aria-expand {
+        opacity: 1;
+        max-height: none;
+        transition-delay: 0ms,0ms;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+// This site uses sub-menus
+.menu {
+
+  // Hide visually but keep accessible to screenreaders and bots
+  &__sub {
+    height: 0;
+    overflow: hidden;
+  }
+
+  a {
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      padding: ($nav-v-padding * 0.5) 1rem;
+    }
+  }
+
+  &__sub li > a {
+    &[aria-current] {
+      @include breakpoint-down($mobile-to-desktop-nav) {
+        background-color: palette('brand-gray');
+      }
+    }
+  }
+
+  a[aria-current] + &__sub,
+  a.parent + &__sub {
+    border-left: 2px solid palette('brand-gray');
+    height: auto;
+    margin: 0 1rem $vertical-rhythm 1rem;
+  }
+}
+
+// Positioning the mainmenu for mobile
+#mainmenu {
+  @include breakpoint-down($mobile-to-desktop-nav) {
+    background-color: $color__body-bg;
+    height: calc(100vh - #{$nav-height});
+    overflow-x: scroll;
+    padding-bottom: $nav-v-padding;
+    position: absolute;
+      top: 100%;
+      left: 0;
+    width: 100%;
+    z-index: z(mainmenu);
+  }
+}

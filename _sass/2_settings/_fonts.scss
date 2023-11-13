@@ -1,0 +1,32 @@
+// Define a "System" font stack for fallbacks
+@font-face {
+  font-family: 'System Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local(".SFNSText-Light"),
+       local("Roboto-Light"),
+       local(".HelveticaNeueDeskInterface-Light"),
+       local("Ubuntu Light"),
+       local("Segoe UI Light"),
+       local("DroidSans"),
+       local("Tahoma");
+  font-display: swap;
+}
+
+// Google fonts
+// Fira Sans https://fonts.google.com/specimen/Fira+Sans
+$font-custom__sans__family: 'Fira Sans';
+$font-custom__sans__light: 100;
+$font-custom__sans__regular: 300;
+$font-custom__sans__bold: 500;
+
+// Define the family and weights
+$font-stack__sans: $font-custom__sans__family, 'System Sans', 'Segoe UI', sans-serif;
+$font-stack__serif: serif;
+$font-stack__mono: monospace;
+
+$line-height__base: 1.5;
+//$line-height__tight: 1.25;
+//$line-height__loose: 1.625;
+
+$kerning: .03125em;

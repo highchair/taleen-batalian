@@ -1,0 +1,9 @@
+.artist-image {
+  display: block;
+
+  @include breakpoint-up(base) {
+    float: left;
+    margin: 0 1em 1em 0;
+    max-width: 50%;
+  }
+}
