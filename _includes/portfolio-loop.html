@@ -1,0 +1,41 @@
+{%- assign arts1 = site.data.twod | where: 'year', page.year1 -%}
+{%- if page.year2 -%}
+  {% assign arts2 = site.data.twod | where: 'year', page.year2 %}
+  {% assign items = arts1 | concat: arts2 %}
+  {% if page.year3 %}
+    {% assign arts3 = site.data.twod | where: 'year', page.year3 %}
+    {% assign items = items | concat: arts3 %}
+  {% endif %}
+{%- else -%}
+  {% assign items = arts1 %}
+{%- endif -%}
+
+<div class="port">
+  <header class="port__header">
+    <h1 class="h5 port__title">{{ page.title }}</h1>
+    <h2 class="port__title">{% if page.year3 %}{{ page.year3 }}{% else %}{{ page.year2 }}{% endif %}–{{ page.year1 }}<small> {{ items.size }} items</small></h2>
+  </header>
+  <nav class="port__gallery__nav">
+    <ul role="list">
+    {% for item in items %}
+      <li>
+        <a href="#{{ item.slug }}">
+          <img src="{{ site.image_path }}{{ page.section }}/{{ item.year }}/{{ item.slug }}.jpg" alt="" />
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+  <ul class="u__list__unstyled port__gallery" role="list">
+  {% for item in items %}
+    <li id="{{ item.slug }}" class="port__gallery__item">
+      <figure>
+        <img src="{{ site.image_path }}{{ page.section }}/{{ item.year }}/{{ item.slug }}.jpg" alt="" />
+        <figcaption>
+          <p><i>{{ item.title }}</i>, {{ item.year }}, {{ item.caption }} {% if item.sold %}<span class="sold">Sold</span>{% endif %}</p>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
