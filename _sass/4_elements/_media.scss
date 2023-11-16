@@ -7,3 +7,35 @@ video {
   display: block;
   max-width: 100%;
 }
+
+.rwd-video {
+  // Set an inline aspect-ratio in a style tag
+  position: relative;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.logo-container {
+  border-top: 1px solid palette('brand-red');
+  border-bottom: 1px solid palette('brand-red');
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -0.5rem;
+  padding: $vertical-rhythm 0;
+
+  img {
+    height: em(72);
+    max-width: calc(50% - 2rem);
+    margin: 0 1rem $vertical-rhythm;
+    object-fit: contain;
+    width: em(200);
+  }
+}

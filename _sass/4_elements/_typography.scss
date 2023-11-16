@@ -166,30 +166,28 @@ dl {
     // Subgrid trick from https://codepen.io/chriscoyier/pen/YzxqJap
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: dt dd;
     gap: 1rem;
-    position: relative;
 
     dt {
-      grid-area: dt;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: subgrid;
+      padding: $vertical-rhythm 0 0;
+
+      // Negate the height
+      height: 0;
+
+      + dd {
+        margin-top: -0.4em;
+      }
     }
 
-    dt {
-      grid-area: dd;
-    }
+    dd {
+      grid-column: 2 / 2;
 
-    dt {
-      //border-top: none;
-      //padding: $vertical-rhythm  0;
-
-      // &::before {
-      //   content: '';
-      //   border-top: 0.5px solid palette('brand-red');
-      //   position: absolute;
-      //   left: 0;
-      //   right: 0;
-      // }
+      + dt {
+        margin-top: 0;
+      }
     }
   }
 }

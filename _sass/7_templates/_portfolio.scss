@@ -4,6 +4,33 @@
   // Variables
   $thumbnail-square: rem(72);
   $thumbnail-margin: $line-height__base * 0.5rem;
+  $image-max-height: 85svh;
+
+  // <ul>
+  &__index {
+
+    // <li>
+    &__item {
+
+      a {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+          height: auto;
+          max-height: $image-max-height;
+          max-width: 65%;
+          width: auto;
+        }
+      }
+
+      &:nth-child(even) a {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 
   // Rules
   @include breakpoint-up($mobile-to-desktop-nav) {
@@ -11,11 +38,17 @@
     grid-template-areas: 
       ". header"
       "nav list";
+    grid-column-gap: 3rem;
+
     // As much as I would love max-content to work here, the nav UL is not getting a width because we are limiting its height
     //grid-template-columns: max-content 1fr;
     // Instead we will set the width to be able to accommodate up to three columns of image thumbnails
-    grid-template-columns: (($thumbnail-square * 4) + ($thumbnail-margin * 4)) 1fr;
-    grid-column-gap: 3rem;
+    // Default is three columns
+    grid-template-columns: (($thumbnail-square * 3) + ($thumbnail-margin * 3)) 1fr;
+
+    &.port__count--large {
+      grid-template-columns: (($thumbnail-square * 4) + ($thumbnail-margin * 4)) 1fr;
+    }
   }
 
   &__header {
@@ -91,7 +124,7 @@
 
       figure img {
         display: inline-block;
-        max-height: 84vh;
+        max-height: $image-max-height;
         width: auto;
       }
 

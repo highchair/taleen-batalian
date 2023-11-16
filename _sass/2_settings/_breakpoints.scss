@@ -58,4 +58,4 @@ $max-widths: (
 );
 
 $max-width: #{rem(map-get($max-widths, base))};
-$max-width__text: #{em(map-get($max-widths, text))};
+$max-width__text: #{rem(map-get($max-widths, text))};

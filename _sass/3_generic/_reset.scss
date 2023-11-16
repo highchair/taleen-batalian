@@ -30,17 +30,18 @@ dd {
 body {
   min-width: 320px;
   text-rendering: optimizeSpeed;
-  //background-color: $color__body-bg;
-  //color: $color__body-fg;
+  background-color: $color__body-bg;
+  color: $color__body-fg;
   font-family: $font-stack__sans;
   font-size: 100%;
   font-weight: $font-custom__sans__regular;
   text-align: left;
 
   // Browser dark-mode
-  background-color: Canvas;
-  color: CanvasText;
-  color-scheme: light dark;
+  // Only useful if you set no other colors whatsoever
+  // background-color: Canvas;
+  // color: CanvasText;
+  // color-scheme: light dark;
 
   @include breakpoint-up(small) {
     text-rendering: optimizeLegibility;

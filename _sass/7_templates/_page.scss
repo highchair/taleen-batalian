@@ -1,15 +1,2 @@
 // Body class
-.page {
-
-  &--portfolio {
-    @include breakpoint-up($mobile-to-desktop-nav) {
-      #content {
-        padding-top: $vertical-rhythm;
-      }
-
-      #content > article.u__vertical__p {
-        padding-top: 0;
-      }
-    }
-  }
-}
+.page {}

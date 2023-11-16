@@ -1,1 +1,10 @@
-/*main*/.content {}
+// <main>
+#content{
+  @include breakpoint-up($mobile-to-desktop-nav) {
+    padding-top: $vertical-rhythm;
+
+    > article.u__vertical__p {
+      padding-top: 0;
+    }
+  }
+}
