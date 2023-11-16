@@ -1,10 +1,10 @@
   <ul {% if include.top == "Yes" %}id="mainmenu" class="menu aria-expand" {% endif %}role="list">
     <li>
-      <a href="#"><b>Exhibitions</b></a>
-      {% comment %}<ul class="menu__sub">
-        <li><a href="#">Tender Cargo</a></li>
-        <li><a href="#">Graft</a></li>
-      </ul>{% endcomment %}
+      <a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}{% if page.permalink contains 'exhibitions' %} class="parent"{% endif %}>Exhibitions</a>
+      <ul class="menu__sub">
+        <li><a href="{% link exhibitions/tender-cargo.html %}"{% if page.permalink contains 'exhibitions/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
+        <li><a href="{% link exhibitions/graft.html %}"{% if page.permalink contains 'exhibitions/graft' %} aria-current="page"{% endif %}>Graft</a></li>
+      </ul>
     </li>
     <li>
       <a href="#"><b>Film & Performance</b></a>
@@ -32,15 +32,6 @@
           <li><a href="{{ item.permalink | relative_url }}"{% if page.permalink == item.permalink %} aria-current="page"{% endif %}>{{ item.nav_title }}</a></li>
           {% endif %}
         {% endfor %}
-        {% comment %}
-        <li><a href="{% link 2d/2021-2022.html %}"{% if page.permalink contains '2021-2022' %} aria-current="page"{% endif %}>2021-2022</a></li>
-        <li><a href="{% link 2d/2018-2020.html %}"{% if page.permalink contains '2018-2020' %} aria-current="page"{% endif %}>2018-2020</a></li>
-        <li><a href="{% link 2d/2016-2017.html %}"{% if page.permalink contains '2016-2017' %} aria-current="page"{% endif %}>2016-2017</a></li>
-        <li><a href="{% link 2d/2014-2015.html %}"{% if page.permalink contains '2014-2015' %} aria-current="page"{% endif %}>2014-2015</a></li>
-        <li><a href="{% link 2d/2011-2012.html %}"{% if page.permalink contains '2011-2012' %} aria-current="page"{% endif %}>2011-2012</a></li>
-        <li><a href="{% link 2d/2009-2010.html %}"{% if page.permalink contains '2009-2010' %} aria-current="page"{% endif %}>2009-2010</a></li>
-        <li><a href="{% link 2d/2007-2008.html %}"{% if page.permalink contains '2007-2008' %} aria-current="page"{% endif %}>2007-2008</a></li>
-        {% endcomment %}
       </ul>
     </li>
     <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>About: Statement & Resume</a></li>
