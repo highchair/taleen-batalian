@@ -107,7 +107,8 @@ dd {
 
 // Only one size has been set for the small style
 small,
-.small {
+.small,
+figcaption {
   font-size: calc(var(--fs__sm) * 1rem);
   letter-spacing: ($kerning * 2);
 }

@@ -1,19 +1,19 @@
   <ul {% if include.top == "Yes" %}id="mainmenu" class="menu aria-expand" {% endif %}role="list">
     <li>
-      <a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}{% if page.permalink contains 'exhibitions' %} class="parent"{% endif %}>Exhibitions</a>
+      <a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}{% if page.permalink contains 'exhibitions' %} class="parent"{% endif %}><b>Exhibitions</b></a>
       <ul class="menu__sub">
         <li><a href="{% link exhibitions/tender-cargo.html %}"{% if page.permalink contains 'exhibitions/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
         <li><a href="{% link exhibitions/graft.html %}"{% if page.permalink contains 'exhibitions/graft' %} aria-current="page"{% endif %}>Graft</a></li>
       </ul>
     </li>
     <li>
-      <a href="#"><b>Film & Performance</b></a>
-      {% comment %}<ul class="menu__sub">
-        <li><a href="#">Tender Cargo</a></li>
-        <li><a href="#">Fringe PVD</a></li>
-        <li><a href="#">Waves & Shadows</a></li>
-        <li><a href="#">Disassemble</a></li>
-      </ul>{% endcomment %}
+      <a href="{% link film-performance/index.html %}"{% if page.permalink == 'film-performance/' %} aria-current="page"{% endif %}{% if page.permalink contains 'film-performance' %} class="parent"{% endif %}><b>Film & Performance</b></a>
+      <ul class="menu__sub">
+        <li><a href="{% link film-performance/tender-cargo.html %}"{% if page.permalink contains 'film-performance/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
+        <li><a href="{% link film-performance/fringe-pvd.html %}"{% if page.permalink contains 'fringe-pvd' %} aria-current="page"{% endif %}>Fringe PVD</a></li>
+        <li><a href="{% link film-performance/waves-shadows.html %}"{% if page.permalink contains 'waves-shadows' %} aria-current="page"{% endif %}>Waves & Shadows</a></li>
+        <li><a href="{% link film-performance/disassemble.html %}"{% if page.permalink contains 'disassemble' %} aria-current="page"{% endif %}>Disassemble</a></li>
+      </ul>
     </li>
     <li>
       <a href="{% link 3d/2022.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>
