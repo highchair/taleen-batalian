@@ -1,0 +1,26 @@
+---
+layout: default
+title: 'Films & Performances'
+section: film-performance
+description: 'Collaborative works that have been expressed as films or live performances.'
+permalink: film-performance/
+body-class: portfolio
+meta_image: 
+---
+
+{%- assign pages = site.pages | where: 'section', page.section | sort: 'year' | reverse -%}
+<header class="port__header u__vertical__pb u__pb--md--0">
+  <h1 class="h3 port__title">{{ page.title }}</h1>
+</header>
+<ul class="u__list__unstyled port__index" role="list">
+{% for page in pages %}
+  {% if page.nav_title %}
+  <li class="u__vertical__p u__a__no-under port__index__item">
+    <a href="{{ page.permalink | relative_url }}">
+      <img src="{{ site.image_path }}{{ page.meta_image }}" alt="" />
+      <h2 class="h4 u__ss__pt--sm">{{ page.nav_title }}</h2>
+    </a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
