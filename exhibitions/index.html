@@ -8,7 +8,7 @@ body-class: portfolio
 meta_image: 
 ---
 
-{%- assign pages = site.pages | where: 'section', page.section | reverse -%}
+{%- assign pages = site.pages | where: 'section', page.section | sort: 'year' | reverse -%}
 <header class="port__header u__vertical__pb u__pb--md--0">
   <h1 class="h3 port__title">{{ page.title }}</h1>
 </header>
