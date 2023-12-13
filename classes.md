@@ -10,4 +10,14 @@ width: text
 
 # Classes and Workshops
 
-Taleen offers classes occasionally as part of RISD’s continuing education curriculum. No classes are being offered at the moment, but please check back if you are interested and we will post as soon as they become available.
+## Artist Mentoring
+
+One-on-one, in-depth feedback and tailored exercises/curriculum based on the particular needs and experience of each artist.
+
+## Private Workshops
+
+Small groups. Focus on a range of topics such as: the importance of risk-taking and experimentation in art-making process, incorporating intuition in your practice, moving through creative slumps and discovering where ideas come from.
+
+## Art and Design Classes
+
+Offered through [Rhode Island School of Design, Continuing Education](https://ce.risd.edu/){:target="_blank"}.
