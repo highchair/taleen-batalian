@@ -32,6 +32,7 @@
     transform: translateY(0);
     transition: $transition;
     width: $btt-size;
+    z-index: 10;
 
     position: absolute;
     top: - #{$btt-size * 1.25};

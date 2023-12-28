@@ -1,9 +1,3 @@
-// Missing forEach on NodeList for IE11
-// SCRIPT438: Object does not support property or method forEach
-if (window.NodeList && !NodeList.prototype.forEach) {
-  NodeList.prototype.forEach = Array.prototype.forEach;
-}
-
 // Check for mouse clicks, enter keypress (13), or spacebar keypress (32)
 // https://karlgroves.com/2014/11/24/ridiculously-easy-trick-for-keyboard-accessibility
 function a11yClick(event){
@@ -19,11 +13,38 @@ function a11yClick(event){
   }
 }
 
+function loadMessageForm() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    // Return early if the request is not complete
+    if (this.readyState !== 4) return;
+    // Process our return data
+    // Get the form and replace its contents
+    var targetElement = document.getElementById('js__insert-form');
+    if (targetElement !== null && targetElement !== '') {
+      if (this.status >= 200 && this.status < 300) {
+        //console.log('success!', this);
+        targetElement.innerHTML = this.responseText;
+      } else {
+        //console.log('Whoops, the request failed!');
+        if (this.status == 404) {
+          targetElement.innerHTML = "External Page not found.";
+        }
+      }
+    }
+  };
+  xhr.open( 'GET', '/assets/partials/message-form.php' );
+  xhr.send();
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   // Make it clear whether JS has loaded or not
   document.body.classList.remove("no-js");
   document.body.classList.add("js");
-  
+
+  // Load the anecdote form immediately if someone clicks the loader button
+  loadMessageForm();
+
   // Expand / Collapse utility
   //
   //Minimum expected markup:
@@ -43,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var expanded = toggle_element.getAttribute('aria-expanded');
         var target_id = toggle_element.getAttribute('aria-controls');
         var target_element = document.getElementById(target_id);
-  
+
         if (expanded == 'true') {
           toggle_element.setAttribute('aria-expanded', 'false');
           target_element.classList.remove('js__aria-expanded')

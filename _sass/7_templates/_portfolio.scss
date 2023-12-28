@@ -24,6 +24,12 @@
           max-width: 65%;
           width: auto;
         }
+
+        h2 {
+          padding-left: 1em;
+          padding-right: 1em;
+          text-align: center;
+        }
       }
 
       &:nth-child(even) a {

@@ -22,13 +22,13 @@ select {
 
 input:not(.btn),
 textarea {
-  //border: 2px solid rgba(palette('brand-teal'), 0.25);
+  border: 0.5px solid rgba($black, 0.25);
   display: block;
   padding: 0.5rem 0.75rem;
   width: 100%;
-  
+
   &:focus {
-    //border-color: palette('brand-orange');
+    border-color: palette('brand-blue');
     box-shadow: none;
     outline: none;
   }
@@ -44,29 +44,29 @@ input[type=radio] {
 
 label {
   display: block;
-  //color: palette(gray-700);
   padding-bottom: 0.25rem;
 }
 
 
+// Classes for form elements
 .form {
-  
+
   fieldset {
     background-color: transparent;
     border: 0;
     margin: -1rem -1rem 0;
     padding: 1.5rem 1rem 0;
     transition: $transition;
-    
+
     &:focus-within {
       //background-color: rgba(palette('brand-teal'), 0.1);
     }
   }
-  
-  //&__group__wrapper {
-    
-    // When the layout supports a 3-column footer, it can support 2-column groups
-    //@include layout-columns() {
+
+  &__group__wrapper {
+
+    //When the layout supports a 3-column footer, it can support 2-column groups
+    // @include layout-columns() {
     //  display: flex;
     //  flex-flow: row nowrap;
     //  align-items: flex-start;
@@ -76,37 +76,41 @@ label {
     //    flex: 0 0 48.5%;
     //    width: 48.5%;
     //  }
-    //}
-  //}
-  
-  &__group {
-    padding-bottom: 0.75rem;
+    // }
   }
-  
+
+  &__group {
+    padding-bottom: $vertical-rhythm;
+  }
+
   &__input {
-    
+
     &--text {}
-    
+
     &--area {}
-    
+
     &--readonly {
       //background: #f2f2f2;
     }
-    
+
     &--help {
       font-style: italic;
       letter-spacing: $kerning;
     }
   }
-  
+
   // Honeypot
-  //&__pollen {
-  //  @include sr-only;
-  //}
-  
+  &__pollen {
+    @include sr-only;
+  }
+
   &__submit__group {
     padding-top: 1rem;
+
+    input + input {
+      @extend %fluid-gutter-ms;
+    }
   }
-  
+
   &__submit {}
 }

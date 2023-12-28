@@ -32,10 +32,15 @@ video {
   padding: $vertical-rhythm 0 0;
 
   img {
-    height: em(72);
+    height: em(56);
     max-width: calc(50% - 2rem);
     margin: 0 1rem $vertical-rhythm;
     object-fit: contain;
-    width: em(200);
+    width: em(160);
+
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      height: em(72);
+      width: em(200);
+    }
   }
 }

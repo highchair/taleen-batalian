@@ -1,7 +1,8 @@
 .btn {
   @include button-reset; // in case this is an actual button element
-  background: right bottom no-repeat linear-gradient(to right, $color__link 50%, rgba($color__link, 0.33) 0) transparent;
+  background: right bottom no-repeat linear-gradient(to right, palette('brand-blue') 50%, rgba(palette('brand-blue'), 0.33) 0) transparent;
   background-size: 200% 2px;
+  color: palette('brand-blue');
   cursor: pointer;
   display: inline-block;
   font-weight: $font-custom__sans__bold;
@@ -17,5 +18,16 @@
     background-position: left bottom;
     color: $color__link--hover;
     transform: translate(2px, 2px);
+  }
+
+  &--primary {
+    background: right bottom no-repeat linear-gradient(to right, $color__link 50%, rgba($color__link, 0.33) 0) transparent;
+    background-size: 200% 2px;
+    color: $color__link;
+    text-decoration: none;
+    transition: 
+      background-position 750ms ease-in-out,
+      color 250ms ease-in-out,
+      transform 250ms ease-in-out;
   }
 }

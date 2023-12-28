@@ -39,10 +39,8 @@ dt {
 }
 
 h4,
-.h4,
 dt,
-h5,
-.h5 {
+h5 {
   font-weight: $font-custom__sans__bold;
   letter-spacing: $kerning;
 }
@@ -53,8 +51,7 @@ h6,
   font-size: #{$h6-max * 1rem};
 }
 
-h6,
-.h6 {
+h6 {
   letter-spacing: $kerning;
   text-transform: uppercase;
 }
