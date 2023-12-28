@@ -10,7 +10,7 @@ width: text
 
 # 2024 Upcoming Exhibitions
 
-<img src="{% link assets/images/exhibition2024.jpg %}" width="1200" height="800" alt="" />
+<img src="{% link assets/images/exhibition2024.jpg %}" style="aspect-ratio: 3/2" alt="" />
 
 ## February 29 - April 14, 2024
 
