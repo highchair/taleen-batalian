@@ -13,18 +13,19 @@
 #   will be accessible in the templates via {{ site.myvariable }}.
 
 title: Taleen Batalian
-description: Personal portfolio of sculpture, painting, and multimedia exhibitions
+description: 'Personal portfolio of sculpture, painting, and multimedia exhibitions'
 instagram: "https://www.instagram.com/taleenbatalian/"
+email: taleen@taleenbatalian.com
 
 github_username: jhogue
 github_repo: "https://github.com/highchair/taleen-batalian"
 
-#baseurl: "/newsite" # the subpath of your site, e.g. /blog
-baseurl: "/"
+baseurl: "" # the subpath of your site, e.g. /blog
 port: 5070
 url: "http://127.0.0.1:5070" # the base hostname & protocol for your site, e.g. http://example.com
-prod_url: "http://taleenbatalian.com" # should not end with a slash
+prod_url: "https://taleenbatalian.com" # should not end with a slash
 destination: _site/
+image_path: "/assets/"
 
 # Build settings
 markdown: kramdown
@@ -36,7 +37,6 @@ kramdown:
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 permalink: /:categories/:title/
 relative_permalinks: false
-image_path: "/assets/img/"
 
 collections:
   sculpture:
@@ -50,10 +50,8 @@ sass:
   sass_dir: _sass
   style: compressed
 
-
 # Plugins and extras
 # plugins:
-
 
 # Exclude from processing.
 exclude:
