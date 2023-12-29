@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 'Three dimensional work'
-meta_title: '2022 | Three dimensional work'
+title: 'Three-dimensional work'
+meta_title: '2022 | Three-dimensional work'
 section: 3d
 description: 
 permalink: 3d/2022/
@@ -10,4 +10,37 @@ meta_image: /3d/2022/transcendental-garment-detail.jpg
 year1: 2022
 ---
 
+{% comment %}
 {% include portfolio-loop-3d.html %}
+{% endcomment %}
+{%- assign arts1 = site.data.threed | where: 'year', page.year1 -%}
+{%- assign items = arts1 -%}
+
+<div class="port port__count{% if items.size > 21 %}--large{% endif %}">
+  <header class="port__header u__vertical__pb u__pb--md--0">
+    <h1 class="h3 port__title">{{ page.title }}</h1>
+  </header>
+  <nav class="port__gallery__nav">
+    <ul role="list">
+    {% for item in items %}
+      <li>
+        <a href="#{{ item.slug }}">
+          <img src="{{ site.image_path }}{{ page.section }}/{{ item.year }}/{{ item.slug }}.jpg" alt="" />
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+  <ul class="u__list__unstyled port__gallery" role="list">
+  {% for item in items %}
+    <li id="{{ item.slug }}" class="port__gallery__item">
+      <figure>
+        <img src="{{ site.image_path }}{{ page.section }}/{{ item.year }}/{{ item.slug }}.jpg" alt="" />
+        <figcaption>
+          <p><i>{{ item.title }}</i>, {{ item.year }}, {{ item.caption }} {% if item.sold %}<span class="sold">Sold</span>{% endif %}</p>
+        </figcaption>
+      </figure>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
