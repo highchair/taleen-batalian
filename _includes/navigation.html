@@ -17,13 +17,13 @@
     </li>
     <li>
       <a href="{% link 3d/2022.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>
-        <b><span aria-hidden="true">3D</span><span class="u__sr-only">Three dimensional</span></b>
+        <b><span aria-hidden="true">3D</span><span class="u__sr-only">Three-dimensional</span></b>
       </a>
     </li>
     <li>
       <!-- We have two current pages with this pattern. Needs to be fixed -->
       <a href="{% link 2d/index.html %}"{% if page.permalink == '2d/' %} aria-current="page"{% endif %}{% if page.permalink contains '2d' %} class="parent"{% endif %}>
-        <b><span aria-hidden="true">2D</span><span class="u__sr-only">Two dimensional</span></b>
+        <b><span aria-hidden="true">2D</span><span class="u__sr-only">Two-dimensional</span></b>
       </a>
       <ul class="menu__sub">
         {% assign twod_items = site.pages | where: 'section', '2d' | reverse %}
@@ -34,9 +34,9 @@
         {% endfor %}
       </ul>
     </li>
-    <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>About: Statement & Resume</a></li>
+    <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>About the Artist</a></li>
     <li><a href="{% link upcoming.md %}"{% if page.permalink contains 'upcoming' %} aria-current="page"{% endif %}>Upcoming Exhibitions</a></li>
-    <li><a href="{% link classes.md %}">Classes & workshops</a></li>
-    <li><a href="{% link contact.html %}">Contact the artist</a></li>
+    <li><a href="{% link classes.md %}"{% if page.permalink contains 'classes' %} aria-current="page"{% endif %}>Classes & workshops</a></li>
+    <li><a href="{% link contact.html %}"{% if page.permalink contains 'contact' %} aria-current="page"{% endif %}>Contact the artist</a></li>
     <li><a href="https://www.instagram.com/taleenbatalian/" target="_blank" title="Opens new window">Follow on Instagram</a></li>
   </ul>
