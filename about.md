@@ -20,9 +20,7 @@ Taleen was named the 2020-21 __Teacher of Excellence__ at Rhode Island School of
 
 ***
 
-## Resume
-
-### Recent Awards and Reviews
+## Recent Awards and Reviews
 
 2022
 : Rhode Island State Council on the Arts, **Project Grant Recipient**, Fall 2019, Spring 2022

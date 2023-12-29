@@ -13,6 +13,7 @@ width: text
 <img src="{% link assets/images/exhibition2024.jpg %}" style="aspect-ratio: 3/2" alt="" />
 
 ## February 29 - April 14, 2024
+{: .h3}
 
 **COUNTERPOINT**: Taleen Batalian and Francoise McAree  
 at <a href="https://www.overlapnewport.com/" title="Opens a new window" target="_blank">OVERLAP</a>, 112 Van Zandt Avenue, Newport RI
