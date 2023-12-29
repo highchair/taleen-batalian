@@ -58,13 +58,13 @@
     flex-flow: row wrap;
     
     > header {
-      flex: 0 0 33%;
+      flex: 1 1 30%;
       position: relative;
       width: auto;
     }
 
     > main {
-      flex: 0 0 67%;
+      flex: 1 1 67%;
       max-width: none; // resets a style coming from .c--max
       width: auto;
     }
@@ -74,7 +74,7 @@
     }
   }
 
-  @include breakpoint-up(x-large) {
+  @include breakpoint-up(large) {
 
     > header {
       flex: 0 0 25%;
@@ -85,7 +85,7 @@
     }
   }
 
-  @include breakpoint-up(xx-large) {
+  @include breakpoint-up(x-large) {
   
     > header {
       flex: 1 0 rem(320);

@@ -39,7 +39,8 @@
   }
 
   // Rules
-  @include breakpoint-up($mobile-to-desktop-nav) {
+  $portfolio-layout: large;
+  @include breakpoint-up($portfolio-layout) {
     display: grid;
     grid-template-areas: 
       ". header"
@@ -60,7 +61,7 @@
   &__header {
     grid-area: header;
 
-    @include breakpoint-up($mobile-to-desktop-nav) {
+    @include breakpoint-up($portfolio-layout) {
       text-align: center;
     }
   }
@@ -75,7 +76,7 @@
       grid-area: nav;
       position: relative;
 
-      @include breakpoint-down($mobile-to-desktop-nav) {
+      @include breakpoint-down($portfolio-layout) {
         @include hide();
       }
 
@@ -108,7 +109,7 @@
     // <ul>
     grid-area: list;
 
-    @include breakpoint-up($mobile-to-desktop-nav) {
+    @include breakpoint-up($portfolio-layout) {
       height: 100vh;
       scroll-behavior: smooth;
       scroll-snap-type: y proximity;
@@ -124,7 +125,7 @@
       padding: $vertical-rhythm 0;
       scroll-snap-align: center;
 
-      @include breakpoint-up($mobile-to-desktop-nav) {
+      @include breakpoint-up($portfolio-layout) {
         text-align: center;
       }
 
