@@ -6,6 +6,72 @@
 #   caption: ''
 #   sold: no
 
+- slug: relic-nose
+  title: 'Relic (Nose)'
+  year: 2024
+  caption: 'intaglio on paper with gouache additions, cardboard, ink, paillettes, 10&quot; x 8.5&quot;'
+  sold: no
+
+- slug: relic-ear
+  title: 'Relic (Ear)'
+  year: 2024
+  caption: 'intaglio on paper with gouache additions, cardboard, ink, paillettes, 10&quot; x 7&quot;'
+  sold: no
+
+- slug: body-1
+  title: 'Body I'
+  year: 2023
+  caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
+  sold: no
+
+- slug: body-2
+  title: 'Body II'
+  year: 2023
+  caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
+  sold: no
+
+- slug: body-3
+  title: 'Body III'
+  year: 2023
+  caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
+  sold: no
+
+- slug: migration-1-collograph-plate-2023
+  title: 'Migration 1 (collograph plate)'
+  year: 2023
+  caption: 'cardboard, ink, paillettes, 12&quot; x 10&quot;'
+  sold: no
+
+- slug: migration-2-collograph-plate-2023
+  title: 'Migration 2 (collograph plate)'
+  year: 2023
+  caption: 'cardboard, ink, paillettes, 12&quot; x 10&quot;'
+  sold: no
+
+- slug: migration-1
+  title: 'Migration 1'
+  year: 2023
+  caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
+  sold: no
+
+- slug: migration-2-1
+  title: 'Migration 2 (one of four)'
+  year: 2023
+  caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
+  sold: no
+
+- slug: migration-2-2
+  title: 'Migration 2 (two of four)'
+  year: 2023
+  caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
+  sold: no
+
+- slug: hand-of-thorns
+  title: 'Hand of Thorns'
+  year: 2023
+  caption: 'intaglio print on acid-free paper with gouache additions, 15&quot; x 11&quot;'
+  sold: no
+
 - slug: father
   title: 'Father'
   year: 2022
@@ -89,6 +155,12 @@
   year: 2020
   caption: 'Oil, ink, gesso on wood panel, 24&quot; x 24&quot; x 2&quot;'
   sold: yes
+
+- slug: moving-surface-2
+  title: 'Moving Surface 2'
+  year: 2019
+  caption: 'Encaustic, oil, ink on wood panel, 24&quot; x 24&quot; x 2&quot;'
+  sold: no
 
 - slug: moving-surface
   title: 'Moving Surface'
