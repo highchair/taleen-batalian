@@ -2,6 +2,7 @@
     <li>
       <a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}{% if page.permalink contains 'exhibitions' %} class="parent"{% endif %}><b>Exhibitions</b></a>
       <ul class="menu__sub">
+        <li><a href="{% link exhibitions/counterpoint.html %}"{% if page.permalink contains 'exhibitions/counterpoint' %} aria-current="page"{% endif %}>Counterpoint</a></li>
         <li><a href="{% link exhibitions/tender-cargo.html %}"{% if page.permalink contains 'exhibitions/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
         <li><a href="{% link exhibitions/graft.html %}"{% if page.permalink contains 'exhibitions/graft' %} aria-current="page"{% endif %}>Graft</a></li>
       </ul>
@@ -18,6 +19,11 @@
     <li>
       <a href="{% link 3d/2022.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>
         <b><span aria-hidden="true">3D</span><span class="u__sr-only">Three-dimensional</span></b>
+      </a>
+    </li>
+    <li>
+      <a href="{% link tapestries/2022-2023.html %}"{% if page.permalink contains 'tapestries' %} aria-current="page"{% endif %}>
+        <b>Tapestries</b>
       </a>
     </li>
     <li>

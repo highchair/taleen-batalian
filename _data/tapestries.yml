@@ -1,0 +1,31 @@
+# Two dimensional work
+
+# - slug: 
+#   title: ''
+#   year: 2022
+#   caption: ''
+#   sold: no
+
+- slug: dark-void
+  title: 'Dark Void'
+  year: 2023
+  caption: 'mixed textiles, 82&quot; x 54&quot; x 8&quot;'
+  sold: no
+
+- slug: light-void
+  title: 'Light Void'
+  year: 2023
+  caption: 'mixed textiles, 75&quot; x 55&quot; x 3&quot;'
+  sold: no
+
+- slug: pantomime
+  title: 'Pantomime'
+  year: 2023
+  caption: 'mixed textiles, 69&quot; x 72&quot; x 6&quot;'
+  sold: no
+
+- slug: allegory
+  title: 'Allegory'
+  year: 2022
+  caption: 'mixed textiles, 120&quot; x 98&quot; x 12&quot;'
+  sold: no
