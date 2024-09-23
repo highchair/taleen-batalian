@@ -12,8 +12,11 @@ width: text
 
 <img src="{% link assets/images/exhibition2024.jpg %}" style="aspect-ratio: 3/2" alt="" />
 
-## February 29 - April 14, 2024
+## October 24 through November 16
 {: .h3}
 
-**COUNTERPOINT**: Taleen Batalian and Francoise McAree  
-at <a href="https://www.overlapnewport.com/" title="Opens a new window" target="_blank">OVERLAP</a>, 112 Van Zandt Avenue, Newport RI
+**LOOKING BACKWARD. LOOKING FORWARD**  
+_Massachusetts College of Art and Design, 7th Biennial Juried Alumni Exhibition_  
+
+Reception: October 24, 6 - 8 pm  
+Doran Gallery, 621 Huntington Ave, Boston MA

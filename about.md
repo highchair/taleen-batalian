@@ -12,11 +12,11 @@ width: text
 
 <img class="artist-image" src="{% link assets/images/taleen-portrait-2022.jpg %}" alt="Taleen Batalian" />
 
-Taleen Batalian is an artist and educator. Her work explores emotional landscapes and ways in which the body can serve as a vehicle for carrying experiences and memories through complex terrain.
+Taleen Batalian is an artist and educator. Working with textiles, drawing, painting, and printmaking, Taleen’s work explores emotional landscapes and ways in which the body can serve as a vehicle for carrying experiences and memories through complex terrain.
 
-Among her recent projects: __Tender Cargo__, a project comprised of sculptural garments, other 2D and 3D artworks, an original soundscape and live performance; __Waves and Shadows__, a collaborative film; __Disassemble__, a performance installation at RISD Museum; and __Graft__, a solo exhibition and site-specific installation of sculptural garments, paintings and video at Wheaton College. Taleen has been awarded grants from Rhode Island State Council on the Arts (RISCA), Providence Art, Culture + Tourism (ACT) and The Arts and Cultural Alliance of Newport County.
+Among her recent projects: _[Counterpoint]({% link exhibitions/counterpoint.html %})_, a collaborative project composed of 2D and 3D artworks; _[Tender Cargo]({% link film-performance/tender-cargo.html %})_, a large-scale collaborative project that comprises sculptural garments, [other 2D and 3D artworks]({% link exhibitions/tender-cargo.html %}), an original soundscape and live performance; _[Waves and Shadows]({% link film-performance/waves-shadows.html %})_, a collaborative film; _[Disassemble]({% link film-performance/disassemble.html %})_, a performance installation at RISD Museum; and _Graft_, a solo exhibition and site-specific installation of sculptural garments, paintings and video at Wheaton College.
 
-Taleen was named the 2020-21 __Teacher of Excellence__ at Rhode Island School of Design, Continuing Education, where she has been a faculty member for more than 14 years. In addition, she teaches and serves as a visiting artist at colleges, art museums and arts organizations including Providence College, Wheaton College and Newport Art Museum. Previously, she served as Director of Education for Providence CityArts for Youth.
+Taleen has been awarded grants from Rhode Island State Council on the Arts (<span class="abbr">RISCA</span>), Providence Art, Culture + Tourism (<span class="abbr">ACT</span>) and The Arts and Cultural Alliance of Newport County. She was named the 2020-21 Teacher of Excellence at Rhode Island School of Design (<span class="abbr">RISD</span>), Continuing Education where she has been a faculty member for more than 15 years.
 
 ***
 
@@ -43,35 +43,38 @@ Taleen was named the 2020-21 __Teacher of Excellence__ at Rhode Island School of
 ## Permanent Collections
 
 Bank of America, Boston MA  
-Blue Star Strategies, Washington, DC  
+Blue Star Strategies, Washingto, DC  
 Imagitas Inc, Waltham MA
 
 
 ## Solo Exhibitions
 
 2022
-: **Tender Cargo**, WaterFire Arts Center, Providence, RI
+: **Tender Cargo**, WaterFire Arts Center, Providence RI
 
 2017
-: **Graft**, Weil Gallery, Wheaton College, Norton, MA
+: **Graft**, Weil Gallery, Wheaton College, Norton MA
 
 2012
-: **Layer by Layer**, Truro Fine Art Studio, Truro, MA
+: **Layer by Layer**, Truro Fine Art Studio, Truro MA
 
 2011
-: **Encaustics Revealed**, University of Rhode Island, Kingston, RI
+: **Encaustics Revealed**, University of Rhode Island, Kingston RI
 
 2007
-: **Global Fairness Initiative**, Benefit for GFI (Board Chair: President William Jefferson Clinton), Washington, DC
+: **Global Fairness Initiative**, Benefit for GFI (Board Chair: President William Jefferson Clinton), Washington DC
 
 2005
-: **On the Surface**, The Armenian Library and Museum of America, Watertown, MA
+: **On the Surface**, The Armenian Library and Museum of America, Watertown MA
 
 2000
-: **Behind the Eyes**, Oakland Gallery/Attleboro Museum, Attleboro, MA
+: **Behind the Eyes**, Oakland Gallery/Attleboro Museum, Attleboro MA
 
 
 ## Collaborative Projects
+
+2024
+: **Counterpoint**, Overlap Gallery, Newport RI
 
 2022
 : **Tender Cargo**, Performance, WaterFire Arts Center, Providence, RI
@@ -80,55 +83,55 @@ Imagitas Inc, Waltham MA
 : **Waves and Shadows**, Film, (in collaboration with Antonio Forte, Heidi Henderson and Keri King)
 
 2018
-: **Disassemble**, RISD Museum, Providence, RI, (performance in collaboration with Heidi Henderson)
+: **Disassemble**, RISD Museum, Providence RI, (performance in collaboration with Heidi Henderson)
 
 
 ## Selected Group Exhibitions
 
 2019
 : **Dot Conference**, The Yard, Brooklyn, NY
-: **National Open Juried Exhibition**, **First Place**, Edward Mitchell Bannister Award, Providence Art Club, Providence, RI
+: **National Open Juried Exhibition**, **First Place**, Edward Mitchell Bannister Award, Providence Art Club, Providence RI
 
 2018
-: **Unravel**, Coastal Contemporary Gallery, Newport, RI
+: **Unravel**, Coastal Contemporary Gallery, Newport RI
 
 2017
 : **Backstory**, Periphery Space, Pawtucket, RI
-: **HABITAT/ion**, 4th Biennial Juried Alumni Exhibition, Mass. College of Art and Design, Bakalar Gallery, Boston, MA
+: **HABITAT/ion**, 4th Biennial Juried Alumni Exhibition, Mass. College of Art and Design, Bakalar Gallery, Boston MA
 
 2016
-: **RISD Summer Faculty Exhibition**, Rhode Island School of Design, Providence, RI, 2013-2016
-: **All Media Juried Exhibition**, South County Art Association, Kingston, RI
+: **RISD Summer Faculty Exhibition**, Rhode Island School of Design, Providence RI, 2013-2016
+: **All Media Juried Exhibition**, South County Art Association Kingston, RI
 
 2014
-: **Members and Staff Invitational**, South County Art Association, Kingston, RI
+: **Members and Staff Invitational**, South County Art Association, Kingston RI
 
 2011
-: **Nesting**, The Narrows Center for the Arts, Fall River, MA
+: **Nesting**, The Narrows Center for the Arts, Fall River MA
 
 2010
-: **Preserve**, 13 Forest Gallery, Arlington, MA
+: **Preserve**, 13 Forest Gallery, Arlington MA
 
 2009
-: **Plenty 13**, Forest Gallery, Arlington, MA
-: **New Work**, Above Providence Optical Gallery, Providence, RI
+: **Plenty 13**, Forest Gallery, Arlington MA
+: **New Work**, Above Providence Optical Gallery, Providence RI
 
 2008
-: **Moments in Time**, Truro Fine Art Studio, Truro, MA
-: **Leap**, 13 Forest Gallery, Arlington, MA
+: **Moments in Time**, Truro Fine Art Studio, Truro MA
+: **Leap**, 13 Forest Gallery, Arlington MA
 
 2007
-: **Lines and Layers**, Truro Fine Art Studio, Truro, MA
-: **Surface and Beyond**, Morpeth Gallery, Hopewell, NJ
-: **New Work**, Tara Peck Gallery, Portsmouth, NH
+: **Lines and Layers**, Truro Fine Art Studio, Truro MA
+: **Surface and Beyond**, Morpeth Gallery, Hopewell NJ
+: **New Work**, Tara Peck Gallery, Portsmouth NH
 
 2006
-: **Wax: Encaustic Techniques in Contemporary Art**, The Brush Art Gallery and Studios, Lowell, MA
+: **Wax: Encaustic Techniques in Contemporary Art**, The Brush Art Gallery and Studios, Lowell MA
 
 2004
 : **On the Surface**, Tara Peck Gallery, Portsmouth NH
-: **Fall Salon**, Cambridge Art Association, Kathryn Schultz Gallery, Cambridge, MA
-: **Wax**, The Space at Alice, Providence, RI
+: **Fall Salon**, Cambridge Art Association, Kathryn Schultz Gallery, Cambridge MA
+: **Wax**, The Space at Alice, Providence RI
 
 2003
-: **Energy**, Cambridge Art Association, Juried by Carl Belz (Rose Art Museum) and Portia Belz (Art New England), Kathryn Schulz Gallery, Cambridge, MA
+: **Energy**, Cambridge Art Association, Juried by Carl Belz (Rose Art Museum) and Portia Belz (Art New England), Kathryn Schulz Gallery, Cambridge MA
