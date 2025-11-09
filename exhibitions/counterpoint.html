@@ -10,6 +10,15 @@ description: ''
 permalink: exhibitions/counterpoint/
 body-class: portfolio
 meta_image: exhibitions/counterpoint/counterpoint-7165.jpg
+image-path: /counterpoint/
+images:
+  - counterpoint-7165.jpg
+  - counterpoint-7126.jpg
+  - counterpoint-7134.jpg
+  - counterpoint-7153.jpg
+  - counterpoint-7190.jpg
+  - counterpoint-7206.jpg
+  - counterpoint-1822.jpg
 ---
 
 <div class="c c--text v-rhythm">
@@ -20,11 +29,11 @@ meta_image: exhibitions/counterpoint/counterpoint-7165.jpg
 
   <p>Presenting the works of two artists together often invites viewers to explore their similarities. However, in the case of COUNTERPOINT it is the differences—whether in scale, materials, process, or content—that sharpen the focus on each individual work. Subtle dissonances emerge, disrupting the narrative, while collectively, the contrasting elements offer an enriched understanding of the artists' shared subjects: the body and skin.</p>
 
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7165.jpg" alt="" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7126.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7134.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7153.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7190.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-7206.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/counterpoint/counterpoint-1822.jpg" alt="" loading="lazy" />
+  <div class="lightbox-gallery">
+  {% for item in page.images %}
+    <a href="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" data-fslightbox="tb-lightbox" data-type="image" class="tb-lightbox-item lightbox-gallery__img" role="button" aria-label="Larger view of image">
+      <img src="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" alt="" loading="lazy" />
+    </a>
+  {% endfor %}
+  </div>
 </div>

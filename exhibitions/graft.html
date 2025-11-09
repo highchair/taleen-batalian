@@ -5,17 +5,29 @@ meta_title: 'Graft | Exhibitions'
 nav_title: 'Graft'
 year: 2017
 section: exhibitions
+section-parent: work
 description: 'This site-specific installation titled Graft was the culmination of more than two years working in multiple disciplines on fiber-based sculptures and encaustic paintings.'
 permalink: exhibitions/graft/
 body-class: portfolio
 meta_image: exhibitions/graft/install01.jpg
+image-path: /graft/
+images:
+  - install02.jpg
+  - install03.jpg
+  - install04.jpg
+  - install05.jpg
+  - install06.jpg
+  - install07.jpg
+  - install08.jpg
 ---
 
 <div class="c c--text v-rhythm">
   <h1>{{ page.title }}</h1>
   <p class="h4 u__mt--0">September 2017</p>
 
-  <img src="{{ site.image_path }}/exhibitions/graft/install01.jpg" alt="" />
+  <a href="{{ site.image_path }}{{ page.section }}{{ page.image-path }}install01.jpg" data-fslightbox="tb-lightbox" data-type="image" class="tb-lightbox-item lightbox-gallery__img" role="button" aria-label="Larger view of image">
+    <img src="{{ site.image_path }}{{ page.section }}{{ page.image-path }}install01.jpg" alt="" />
+  </a>
 
   <p>Titled <em>Graft</em>, this site-specific installation at the Weil Gallery at Wheaton College, was the culmination of more than two years working in multiple disciplines on fiber-based sculptures and encaustic paintings. The exhibition explored the act of pairing disparate pieces together, to discover whether they would “take” and become unified. </p>
 
@@ -26,11 +38,11 @@ meta_image: exhibitions/graft/install01.jpg
     <iframe src="https://player.vimeo.com/video/245749783" width="520" height="293" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
   </div>
 
-  <img src="{{ site.image_path }}exhibitions/graft/install02.jpg" alt="" />
-  <img src="{{ site.image_path }}exhibitions/graft/install03.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/graft/install04.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/graft/install05.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/graft/install06.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/graft/install07.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/graft/install08.jpg" alt="" loading="lazy" />
+  <div class="lightbox-gallery">
+  {% for item in page.images %}
+    <a href="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" data-fslightbox="tb-lightbox" data-type="image" class="tb-lightbox-item lightbox-gallery__img" role="button" aria-label="Larger view of image">
+      <img src="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" alt="" loading="lazy" />
+    </a>
+  {% endfor %}
+  </div>
 </div>
