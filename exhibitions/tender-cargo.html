@@ -5,17 +5,26 @@ meta_title: 'Tender Cargo | Exhibitions'
 nav_title: 'Tender Cargo'
 year: 2022
 section: exhibitions
+section-parent: work
 description: 'Tender Cargo comprises sculptural garments, 2D and 3D artworks, and an original soundscape. The exhibition culminates in a live performance with dance, original sound score, and scenic design.'
 permalink: exhibitions/tender-cargo/
 body-class: portfolio
-meta_image: exhibitions/tender-cargo/install01.jpg
+meta_image: exhibitions/tender-cargo/install-01.jpg
+image-path: /tender-cargo/
+images:
+  - install-01.jpg
+  - install-02.jpg
+  - install-03.jpg
+  - install-04.jpg
+  - install-05.jpg
+  - install-06.jpg
+  - install-07.jpg
+  - install-08.jpg
 ---
 
 <div class="c c--text v-rhythm">
   <h1>{{ page.title }}</h1>
   <p class="h4 u__mt--0">October 2022</p>
-
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install06.jpg" alt="" />
 
   <p>Tender Cargo explores how bodies hold and carry trauma across time and geography, drawing on artist Taleen Batalian’s legacy as the granddaughter of four grandparents from Western Armenia. Batalian grew up surrounded by references to the Genocide her family endured, but it was never discussed openly. After the death of her mother in 2012, Batalian began using textiles and sculpture to unpack this murky silence and interpret her cultural history to understand the legacy of trauma passed down from her grandparents to her parents and ultimately to her. Tender Cargo investigates what it means to wear and carry our trauma and asks us to consider how the body traverses under the weight of these heavy loads.</p>
 
@@ -30,18 +39,14 @@ meta_image: exhibitions/tender-cargo/install01.jpg
     <li>Michele L’Heureux, Curator</li>
   </ul>
 
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install01.jpg" alt="" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install02.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install03.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install04.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install05.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install07.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install08.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install09.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install10.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install11.jpg" alt="" loading="lazy" />
-  <img src="{{ site.image_path }}exhibitions/tender-cargo/install12.jpg" alt="" loading="lazy" />
-
+  <div class="lightbox-gallery">
+  {% for item in page.images %}
+    <a href="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" data-fslightbox="tb-lightbox" data-type="image" class="tb-lightbox-item lightbox-gallery__img" role="button" aria-label="Larger view of image">
+      <img src="{{ site.image_path }}{{ page.section }}{{ page.image-path }}{{ item }}" alt="" loading="lazy" />
+    </a>
+  {% endfor %}
+  </div>
+  
   <p><em>This project was made possible by generous support from:</em></p>
   <p class="logo-container u__vertical__mt">
     <img src="{{ site.image_path }}support/logo-prov-arts-tourism.png" alt="" loading="lazy" />
