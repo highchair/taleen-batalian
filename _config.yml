@@ -38,14 +38,6 @@ kramdown:
 permalink: /:categories/:title/
 relative_permalinks: false
 
-collections:
-  sculpture:
-    output: true
-    permalink: /sculpture/:name/
-  painting:
-    output: true
-    permalink: /painting/:name/
-
 sass:
   sass_dir: _sass
   style: compressed
