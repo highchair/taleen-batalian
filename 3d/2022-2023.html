@@ -1,0 +1,22 @@
+---
+layout: default
+title: 'Sculptural Garments'
+meta_title: '2022 | Sculptural Garments'
+section: 3d
+section-parent: work
+description: 
+permalink: 3d/2022-2023/
+body-class: portfolio
+meta_image: /3d/2022/transcendental-garment-detail.jpg
+year1: 2023
+year2: 2022
+---
+
+{%- assign arts1 = site.data.threed | where: 'year', page.year1 -%}
+{%- if page.year2 -%}
+  {% assign arts2 = site.data.threed | where: 'year', page.year2 %}
+  {% assign items = arts1 | concat: arts2 %}
+{%- else -%}
+  {% assign items = arts1 %}
+{%- endif -%}
+{%- include portfolio-loop.html -%}
