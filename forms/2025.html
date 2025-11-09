@@ -1,0 +1,22 @@
+---
+layout: default
+title: 'Forms'
+nav_title: 'Forms'
+meta_title: '2025 | Forms'
+section: forms
+section-parent: work
+description: 
+permalink: forms/2025/
+body-class: portfolio
+meta_image: forms/yellow-arm-2025-detail.jpg
+year1: 2025
+---
+
+{%- assign arts1 = site.data.forms | where: 'year', page.year1 -%}
+{%- if page.year2 -%}
+  {% assign arts2 = site.data.forms | where: 'year', page.year2 %}
+  {% assign items = arts1 | concat: arts2 %}
+{%- else -%}
+  {% assign items = arts1 %}
+{%- endif -%}
+{%- include portfolio-loop.html -%}

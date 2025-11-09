@@ -1,0 +1,43 @@
+# Two dimensional work
+
+# - slug: 
+#   title: ''
+#   year: 2022
+#   caption: ''
+#   sold: no
+
+- slug: gray-arm-2025
+  title: 'Gray Arm'
+  year: 2025
+  caption: 'Plaster, paper, wood, acrylic, gloss medium, 10&quot; x 7&quot; x 3&quot;'
+  sold: no
+
+- slug: hold-me-2025
+  title: 'Hold Me'
+  year: 2025
+  caption: 'Cotton, thread, plaster, wood, batting, yarn, acrylic, ink, 18&quot; x 20&quot; x 6&quot;'
+  sold: no
+
+- slug: hold-me-2025-detail
+  title: 'Hold Me (detail)'
+  year: 2025
+  caption: 'Cotton, thread, plaster, wood, batting, yarn, acrylic, ink, 18&quot; x 20&quot; x 6&quot;'
+  sold: no
+
+- slug: inside-outside-2025
+  title: 'Inside Outside'
+  year: 2025
+  caption: 'Plaster, paper, wood, acrylic, gloss medium, 11&quot; x 9&quot; x 6&quot;'
+  sold: no
+
+- slug: yellow-arm-2025
+  title: 'Yellow Arm'
+  year: 2025
+  caption: 'Plaster, paper, wood, acrylic, gloss medium, 11&quot; x 7&quot; x 4&quot;'
+  sold: no
+
+- slug: yellow-arm-2025-detail
+  title: 'Yellow Arm (detail)'
+  year: 2025
+  caption: 'Plaster, paper, wood, acrylic, gloss medium, 11&quot; x 7&quot; x 4&quot;'
+  sold: no
