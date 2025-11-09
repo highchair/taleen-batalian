@@ -8,810 +8,938 @@
 
 - slug: relic-nose
   title: 'Relic (Nose)'
+  media: prints
   year: 2024
   caption: 'intaglio on paper with gouache additions, cardboard, ink, paillettes, 10&quot; x 8.5&quot;'
   sold: no
 
 - slug: relic-ear
   title: 'Relic (Ear)'
+  media: prints
   year: 2024
   caption: 'intaglio on paper with gouache additions, cardboard, ink, paillettes, 10&quot; x 7&quot;'
   sold: no
 
 - slug: body-1
   title: 'Body I'
+  media: prints
   year: 2023
   caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
   sold: no
 
 - slug: body-2
   title: 'Body II'
+  media: prints
   year: 2023
   caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
   sold: no
 
 - slug: body-3
   title: 'Body III'
+  media: prints
   year: 2023
   caption: 'monoprint on acid-free paper (one from a series of five), plate: 10&quot; x 7.5&quot;, sheet: 15&quot; x 11&quot;, frame: 17.5&quot; x 13.75&quot;'
   sold: no
 
 - slug: migration-1-collograph-plate-2023
   title: 'Migration 1 (collograph plate)'
+  media: prints
   year: 2023
   caption: 'cardboard, ink, paillettes, 12&quot; x 10&quot;'
   sold: no
 
 - slug: migration-2-collograph-plate-2023
   title: 'Migration 2 (collograph plate)'
+  media: prints
   year: 2023
   caption: 'cardboard, ink, paillettes, 12&quot; x 10&quot;'
   sold: no
 
 - slug: migration-1
   title: 'Migration 1'
+  media: prints
   year: 2023
   caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
   sold: no
 
 - slug: migration-2-1
   title: 'Migration 2 (one of four)'
+  media: prints
   year: 2023
   caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
   sold: no
 
 - slug: migration-2-2
   title: 'Migration 2 (two of four)'
+  media: prints
   year: 2023
   caption: 'collograph print on acid-free paper, edition: three (each with unique variants), plate: 11.75&quot; x 10&quot;, sheet:  22.25&quot; x 15&quot;, frame: 25&quot; x 17.5&quot;'
   sold: no
 
 - slug: hand-of-thorns
   title: 'Hand of Thorns'
+  media: prints
   year: 2023
   caption: 'intaglio print on acid-free paper with gouache additions, 15&quot; x 11&quot;'
   sold: no
 
 - slug: father
   title: 'Father'
+  media: painting
   year: 2022
   caption: 'Gouache, intaglio print on paper, 44&quot; x 30&quot; x 2&quot; (framed)'
   sold: no
 
 - slug: mother
   title: 'Mother'
+  media: painting
   year: 2022
   caption: 'Gouache, linoleum cut acrylic print on paper, 44&quot; x 30&quot; x 2&quot; (framed)'
   sold: no
 
 - slug: hole-in-my-memory
   title: 'Hole in my Memory'
+  media: painting
   year: 2022
   caption: 'Cotton, ink, paillettes, gesso, 7&quot; x 5&quot; x 1&quot;'
   sold: no
 
 - slug: complex-terrain
   title: 'Complex Terrain'
+  media: painting
   year: 2022
   caption: 'Plaster cloth, gouache, intaglio ink, paper on wood, 7.5&quot; x 5.5&quot; x 1&quot;'
   sold: no
 
 - slug: untitled-protrusion-3
   title: 'Untitled'
+  media: painting
   year: 2022
   caption: 'Cotton, ink, acrylic, gesso, paillettes, 25&quot; x 21&quot; x 4&quot;'
   sold: no
 
 - slug: small-foot
   title: 'Small Foot with Holes'
+  media: painting
   year: 2022
   caption: 'Gouache, intaglio ink on paper, 12&quot; x 9&quot;'
   sold: no
 
 - slug: lost-places-adana
   title: 'Lost Places (Adana)'
+  media: painting
   year: 2022
   caption: 'Series of small works on cotton, with thread, acrylic paint, ink, and beads, approx 14&quot; x 11&quot;'
   sold: no
 
 - slug: lost-places-belejik
   title: 'Lost Places (Belejik)'
+  media: painting
   year: 2022
   caption: 'Series of small works on cotton, with thread, acrylic paint, ink, and beads, approx 14&quot; x 11&quot;'
   sold: no
 
 - slug: lost-places-yozgat
   title: 'Lost Places (Yozgat)'
+  media: painting
   year: 2022
   caption: 'Series of small works on cotton, with thread, acrylic paint, ink, and beads, approx 14&quot; x 11&quot;'
   sold: no
 
 - slug: lost-places-shabin-karahisar
   title: 'Lost Places (Shabin-Karahisar)'
+  media: painting
   year: 2022
   caption: 'Series of small works on cotton, with thread, acrylic paint, ink, and beads, approx. 14&quot; x 11&quot;'
   sold: no
 
 - slug: hidden-below
   title: 'Hidden Below'
+  media: encaustic
   year: 2020
   caption: 'Encaustic, oil, ink on wood panel, 24&quot; x 24&quot; x 2&quot;'
   sold: no
 
 - slug: jamestown
   title: 'Jamestown'
+  media: encaustic
   year: 2020
   caption: 'oil, ink, gesso on wood panel, 24&quot; x 24&quot; x 2&quot;'
   sold: yes
 
 - slug: small-moving-surface
   title: 'Small Moving Surface'
+  media: encaustic
   year: 2020
   caption: 'Encaustic, oil, ink on wood panel, 12&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: waves-and-rocks
   title: 'Waves and Rocks'
+  media: encaustic
   year: 2020
   caption: 'Oil, ink, gesso on wood panel, 24&quot; x 24&quot; x 2&quot;'
   sold: yes
 
 - slug: moving-surface-2
   title: 'Moving Surface 2'
+  media: encaustic
   year: 2019
   caption: 'Encaustic, oil, ink on wood panel, 24&quot; x 24&quot; x 2&quot;'
   sold: no
 
 - slug: moving-surface
   title: 'Moving Surface'
+  media: encaustic
   year: 2019
   caption: 'Encaustic, oil, ink on wood panel, 24&quot; x 24&quot; x 2&quot; <br><b>First Place-Edward Mitchell Bannister Award</b>'
   sold: no
 
 - slug: lace-grid
   title: 'Lace Grid'
+  media: encaustic
   year: 2018
   caption: 'Encaustic, oil on wood panel, 8&quot; x 6&quot; x 1&quot;'
   sold: no
 
 - slug: below-the-surface
   title: 'Below the Surface'
+  media: encaustic
   year: 2018
   caption: 'Encaustic, oil, ink on panel, 24&quot; x 24&quot;'
   sold: no
 
 - slug: overlap
   title: 'Overlap'
+  media: encaustic
   year: 2018
   caption: 'Encaustic, oil, ink on panel, 24&quot; x 24&quot;'
   sold: no
 
 - slug: steel-grid
   title: 'Steel Grid'
+  media: encaustic
   year: 2018
   caption: 'Encaustic, oil, ink, steel on panel, 8&quot; x 6&quot; x 1&quot;'
   sold: no
 
 - slug: lace-with-black
   title: 'Lace with Black'
+  media: encaustic
   year: 2018
   caption: 'Encaustic, oil, ink on panel, 10&quot; x 10&quot; x 2&quot;'
   sold: no
 
 - slug: light-threshold
   title: 'Light Threshold'
+  media: encaustic
   year: 2018
   caption: 'Oil on panel, 24&quot; x 24&quot; x 2&quot;'
   sold: yes
 
 - slug: grid-graft
   title: 'Grid Graft'
+  media: encaustic
   year: 2017
   caption: 'Encaustic, oil on panel, 10&quot; x 8&quot; x 1&quot;'
   sold: no
 
 - slug: invisible-grid
   title: 'Invisible Grid'
+  media: encaustic
   year: 2017
   caption: 'Encaustic, oil, faux pearls on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: dark-threshold
   title: 'Dark Threshold'
+  media: encaustic
   year: 2017
   caption: 'Oil on panel, 24&quot; x 24&quot; x 2&quot;'
   sold: no
 
 - slug: monument
   title: 'Monument'
+  media: encaustic
   year: 2017
   caption: 'Oil on panel, 24&quot; x 24&quot; x 1&quot; (Diptych)'
   sold: no
 
 - slug: emerging-grid
   title: 'Emerging Grid'
+  media: encaustic
   year: 2017
   caption: 'Encaustic, oil, faux pearls on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: yes
 
 - slug: strong-union
   title: 'Strong Union'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, ink on panel, 24&quot; x 24&quot; x 2&quot; (Diptych)'
   sold: yes
 
 - slug: order
   title: 'Order'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 16&quot; x 16&quot; x 1&quot;'
   sold: no
 
 - slug: dark-grid
   title: 'Dark Grid'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 8&quot; x 8&quot; x 2&quot;'
   sold: no
 
 - slug: pink-grid
   title: 'Pink Grid'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 9&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: broken-grid
   title: 'Broken Grid'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 8&quot; x 10&quot; x 1&quot;'
   sold: no
 
 - slug: vertical-grid
   title: 'Vertical Grid'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 9&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: nostalgia
   title: 'Nostalgia'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, glass beads, lace on panel, 10&quot; x 10&quot; x 2&quot;'
   sold: yes
 
 - slug: fusing-elements
   title: 'Fusing Elements'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil on panel, 10&quot; x 10&quot; x 2&quot;'
   sold: yes
 
 - slug: fusing-elements-2
   title: 'Fusing Elements 2'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil on panel, 10&quot; x 10&quot; x 2&quot;'
   sold: no
 
 - slug: ivory-with-rope
   title: 'Ivory with Rope'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, cotton rope on panel, 6&quot; x 6&quot; x 1&quot;'
   sold: no
 
 - slug: small-grid
   title: 'Small Grid'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, faux pearls on panel, 6&quot; x 6&quot; x 1&quot;'
   sold: no
 
 - slug: newbury
   title: 'Newbury'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, glass buttons and beads on panel, 6&quot; x 6&quot; x 1&quot;'
   sold: no
 
 - slug: shoreline
   title: 'Shoreline'
+  media: encaustic
   year: 2016
   caption: 'Encaustic, oil, shells, glass beads on panel, 6&quot; x 6&quot; x 1&quot;'
   sold: yes
 
 - slug: points-of-intersection
   title: 'Points of Intersection'
+  media: encaustic
   year: 2016
   caption: 'Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: points-intersection-2
   title: 'Points of Intersection 2'
+  media: encaustic
   year: 2016
   caption: 'Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: metamorphosis
   title: 'Metamorphosis'
+  media: encaustic
   year: 2016
   caption: 'Oil, encaustic on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: graft
   title: 'Graft'
+  media: encaustic
   year: 2016
   caption: 'encaustic, Oil on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: better-fruit
   title: 'Better Fruit'
+  media: encaustic
   year: 2016
   caption: 'Oil on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: fibers
   title: 'Fibers'
+  media: encaustic
   year: 2015
   caption: 'Ink, Encaustic, Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: esther
   title: 'Esther'
+  media: encaustic
   year: 2015
   caption: 'Encaustic on wood panel, 11.5&quot; x 20.5&quot;'
   sold: no
 
 - slug: filaments
   title: 'Filaments'
+  media: encaustic
   year: 2015
   caption: 'Ink, Encaustic, Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: moving-patterns
-  title: Moving Patterns''
+  title: 'Moving Patterns'
+  media: encaustic
   year: 2015
   caption: 'Ink, Encaustic, Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: overlapping-fibers
   title: 'Overlapping Fibers'
+  media: encaustic
   year: 2015
   caption: 'Ink, Encaustic, Oil on panel, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: patterns
   title: 'Patterns'
+  media: encaustic
   year: 2015
   caption: 'Ink, Encaustic, Oil on panel, 16&quot; x 16&quot; x 2&quot;'
   sold: yes
 
 - slug: shoes1
   title: 'Shoes 1'
+  media: encaustic
   year: 2014
   caption: 'Encaustic on panel, 10&quot; x 8&quot; x 1&quot;'
   sold: yes
 
 - slug: floating1
   title: 'Floating #1'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 18&quot; x 14&quot;'
   sold: no
 
 - slug: floating2
   title: 'Floating #2'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 18&quot; x 14&quot;'
   sold: no
 
 - slug: floating3
   title: 'Floating #3'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 18&quot; x 14&quot;'
   sold: no
 
 - slug: floating4
   title: 'Floating #4'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 18&quot; x 14&quot;'
   sold: no
 
 - slug: floating5
   title: 'Floating #5'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 18&quot; x 14&quot;'
   sold: no
 
 - slug: floating6
   title: 'Floating #6'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel on paper, 14&quot; x 11&quot;'
   sold: no
 
 - slug: shell-hidden-shell
   title: 'Shell with Hidden Shell'
+  media: archive
   year: 2012
   caption: 'Acrylic, oil pastel, pencil on paper, 14&quot; x 11&quot;'
   sold: no
 
 - slug: waiting2
   title: 'Waiting 2'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 16&quot; x 16&quot; x 1&quot;'
   sold: no
 
 - slug: grid
   title: 'Grid (from Waiting)'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 16&quot; x 16&quot; x 1&quot;'
   sold: no
 
 - slug: blurred
   title: 'Blurred (from Waiting)'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: green-internal-landscape
   title: 'Green Internal Landscape'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 18&quot; x 18&quot; x 1&quot;'
   sold: no
 
 - slug: yellow-ovals
   title: 'Yellow with Ovals'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on Canvas,10&quot; x 8&quot; x 1&quot;'
   sold: yes
 
 - slug: blue-lines
   title: 'Blue with Lines'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on Canvas, 10&quot; x 8&quot; x 1&quot;'
   sold: no
 
 - slug: violet-scratches
   title: 'Violet with Scratches'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on Canvas, 10&quot; x 8&quot; x 1&quot;'
   sold: no
 
 - slug: protected2
   title: 'Protected 2'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: protected
   title: 'Protected'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: gray-ovals-below
   title: 'Gray with Ovals Below'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: no
 
 - slug: gray-falling-lines
   title: 'Gray with Falling Lines'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: yes
 
 - slug: gray-white-above
   title: 'Gray with White Above'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: no
 
 - slug: yellow-hanging-lines
   title: 'Yellow with Hanging Lines'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: no
 
 - slug: yellow-drips
   title: 'Yellow with Drips'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: yes
 
 - slug: yellow-black-lines
   title: 'Yellow with Black and White Lines'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on paper, 16&quot; x 10&quot; (24&quot; x 18&quot; framed)'
   sold: yes
 
 - slug: waiting
   title: 'Waiting'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 16&quot; x 16&quot; x 1&quot;'
   sold: no
 
 - slug: shells-and-fossils
   title: 'Shells and Fossils'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on four panels, 12&quot; x 16&quot; (polyptych)'
   sold: no
 
 - slug: internal-landscape3
   title: 'Internal Landscape 3'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 16&quot; x 16&quot; x 2&quot;'
   sold: no
 
 - slug: red-chairs
   title: 'Red Chairs'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 10&quot; x 10&quot; x 1&quot;'
   sold: no
 
 - slug: illuminated-tree
   title: 'Illuminated Tree with Bird'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 9&quot; x 12&quot;'
   sold: yes
 
 - slug: one-white-light
   title: 'One White Light'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on canvas, 10&quot; x 8&quot;'
   sold: yes
 
 - slug: redbirdchair
   title: 'Red Bird with Chair'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on Canvas, 8&quot; x 10&quot;'
   sold: no
 
 - slug: redbirdhorses
   title: 'Red Bird with Horses'
+  media: archive
   year: 2011
   caption: 'Encaustic, oil on panel, 16&quot; x 16&quot;'
   sold: no
 
 - slug: abovewater
   title: 'Above Water'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on canvas, 17&quot; x 24&quot; x 1&quot;'
   sold: yes
 
 - slug: fossil
   title: 'Fossil'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on panel, 8&quot; x 10&quot; x 1&quot;'
   sold: yes
 
 - slug: internal_landscape2
   title: 'Internal Landscape 2'
+  media: archive
   year: 2010
   caption: 'Encasutic oil on panel, 16&quot; x 16&quot; x 1&quot;'
   sold: yes
 
 - slug: illuminated
   title: 'Illuminated'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on panel, 9&quot; x 12&quot; x 1&quot;'
   sold: no
 
 - slug: illuminated_shell
   title: 'Illuminated Shell'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on Cigar Box, 4&quot; x 8&quot; x 4&quot;'
   sold: yes
 
 - slug: lines-and-spheres
   title: 'Lines and Spheres'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on Panel, 8&quot; x 10&quot'
   sold: no
 
 - slug: lines-and-spheres-2
   title: 'Lines and Spheres 2'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on panel, 8&quot; x 10&quot; x 2&quot;'
   sold: yes
 
 - slug: redbird2
   title: 'Red Bird 2'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on Panel, 10&quot; x 10&quot;'
   sold: yes
 
 - slug: red_bird_illuminated
   title: 'Red Bird Illuminated'
+  media: archive
   year: 2010
   caption: 'Encaustic, oil on panel, 16&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: 7redshell
   title: '#7 with Red Shell'
+  media: archive
   year: 2010
   caption: 'Acrylic, oil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: 8pinkblackshell
   title: '#8 with Pink and Black Shell'
+  media: archive
   year: 2010
   caption: 'Acrylic, oil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: 9withwash
   title: '#9 with Wash'
+  media: archive
   year: 2010
   caption: 'Acrylic, oil on paper, 9&quot; x 11&quot'
   sold: no
 
-# - slug: bluetwoshells
-#   title: 'Blue with  Two Shells'
-#   year: 2010
-#   caption: 'Acrylic, oil, pencil on paper, 11&quot; x 14&quot;'
-#   sold: no
-
 - slug: darkabove
   title: 'Dark Above'
+  media: archive
   year: 2009
   caption: 'Encaustic, oil on Canvas, 12&quot; x 12&quot;'
   sold: no
 
 - slug: 1withcone
   title: '#1 with Cone'
+  media: archive
   year: 2008
   caption: 'acrylic, oil pastel, pencil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: 2withplate
   title: '#2 with Plate'
+  media: archive
   year: 2008
   caption: 'acrylic, oil pastel, pencil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: 3withbird
   title: '#3 with Bird'
+  media: archive
   year: 2008
   caption: 'acrylic, oil pastel, pencil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: 4withball
   title: '#4 with Ball'
+  media: archive
   year: 2008
   caption: 'acrylic, oil pastel, pencil on paper, 9&quot; x 11&quot;'
   sold: yes
 
 - slug: 5withshell
   title: '#5 with Shell'
+  media: archive
   year: 2008
   caption: 'acrylic, oil pastel, pencil on paper, 9&quot; x 11&quot;'
   sold: no
 
 - slug: abstractwhiteline
   title: 'Abstract with White Line'
+  media: archive
   year: 2008
   caption: 'Oil and Encaustic on Panel, 6&quot; x 8&quot; x 2&quot;'
   sold: yes
 
 - slug: gather2
   title: 'Gather 2'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on panel, 8&quot; x 10&quot; x 2&quot;'
   sold: no
 
 - slug: birdbox
   title: 'Bird Box'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on cigar box, 4&quot; x 8&quot; x 4&quot; '
   sold: yes
 
 - slug: blueunderneath
   title: 'Blue Underneath'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on panel, 20&quot; x 16&quot; x 1&quot;'
   sold: no
 
 - slug: gatherhide
   title: 'Gather and Hide'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot; '
   sold: yes
 
 - slug: nestegg2
   title: 'Nest Egg 2'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on cigar boxes, 8&quot; x 8&quot; x 4&quot; (diptych)'
   sold: yes
 
 - slug: redlandscape
   title: 'Red Landscape'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on panel, 11&quot; x 14&quot; x 1&quot; '
   sold: yes
 
 - slug: underneath
   title: 'Underneath'
+  media: archive
   year: 2008
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: bluegreen
   title: 'Blue with Green Cells'
+  media: archive
   year: 2007
   caption: 'plaster, acrylic, oil, pencil on paper, 14&quot; x 14&quot; framed '
   sold: yes
 
 - slug: greenpink
   title: 'Green with Pink Cells'
+  media: archive
   year: 2007
   caption: 'plaster, acrylic, oil, pencil on paper, 14&quot; x 14&quot; framed'
   sold: no
 
 - slug: yellowblue
   title: 'Pale Yellow with Blue Cells'
+  media: archive
   year: 2007
   caption: 'plaster, acrylic, oil, pencil on paper, 12&quot; x 16&quot; framed '
   sold: yes
 
 - slug: abovebelow
   title: 'Above and Below'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 24&quot; x 16&quot; x 1&quot;'
   sold: yes
 
 - slug: abstractbal3
   title: 'Abstract Balance 3'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: abstractbal4
   title: 'Abstract Balance 4 (Storm)'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: abstractcity
   title: 'Abstract City'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 24&quot; x 23&quot; x 1&quot; '
   sold: yes
 
 - slug: city3
   title: 'City 3'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on panel, 8&quot; x 8&quot; x 2&quot; '
   sold: yes
 
 - slug: internal
   title: 'Internal Landscape'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 24&quot; x 23&quot; x 1&quot;'
   sold: yes
 
 - slug: landbox
   title: 'Landscape Box'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on cigar boxes, 8&quot; x 8&quot; x 4&quot; (diptych)'
   sold: no
 
 - slug: roots
   title: 'Roots'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 24&quot; x 16&quot; x 1&quot; '
   sold: yes
 
 - slug: smallredovals
   title: 'Small Red Ovals'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: space
   title: 'Space'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on panel, 16&quot; x 16&quot; x 2&quot;'
   sold: yes
 
 - slug: withoutcolor
   title: 'Without Color'
+  media: archive
   year: 2007
   caption: 'encaustic and oil on canvas, 12&quot; x 12&quot; x 1&quot;'
   sold: yes
 
 - slug: landscape
   title: 'Landscape'
+  media: archive
   year: 2005
   caption: 'encaustic and oil on panel, 11&quot; x 14&quot; x 2&quot;'
   sold: no

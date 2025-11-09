@@ -1,0 +1,16 @@
+---
+layout: default
+title: 'Prints and Plates'
+nav_title: 'Prints and Plates'
+meta_title: 'Prints and Plates | Two-dimensional work'
+section: 2d
+section-parent: work
+media: prints
+description: 
+permalink: 2d/prints/
+body-class: portfolio
+meta_image: 2d/2023/migration-1-collograph-plate-2023.jpg
+---
+
+{%- assign items = site.data.twod | where: 'media', page.media -%}
+{%- include portfolio-loop.html -%}

@@ -2,6 +2,7 @@
 layout: default
 title: 'Two-dimensional work'
 section: 2d
+section-parent: work
 description: 
 permalink: 2d/
 body-class: portfolio
@@ -15,12 +16,14 @@ meta_image: 2d/2018/below-the-surface.jpg
 <ul class="u__list__unstyled port__index" role="list">
 {% for page in pages %}
   {% if page.nav_title %}
+    {% unless page.nav_title == 'Archive' %}
   <li class="u__vertical__p u__a__no-under port__index__item">
     <a href="{{ page.permalink | relative_url }}">
       <img src="{{ site.image_path }}{{ page.meta_image }}" alt="" />
       <h2 class="h4 u__ss__pt--sm">{{ page.nav_title }}</h2>
     </a>
   </li>
+    {% endunless%}
   {% endif %}
 {% endfor %}
 </ul>

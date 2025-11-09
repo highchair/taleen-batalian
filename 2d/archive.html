@@ -1,0 +1,15 @@
+---
+layout: default
+title: 'Archive'
+nav_title: 'Archive'
+meta_title: 'Archive | Two-dimensional work'
+section: 2d
+section-parent: work
+media: archive
+description: 
+permalink: 2d/archive/
+body-class: portfolio
+---
+
+{%- assign items = site.data.twod | where: 'media', page.media -%}
+{%- include portfolio-loop.html -%}
