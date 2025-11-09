@@ -1,48 +1,55 @@
   <ul {% if include.top == "Yes" %}id="mainmenu" class="menu aria-expand" {% endif %}role="list">
     <li>
-      <a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}{% if page.permalink contains 'exhibitions' %} class="parent"{% endif %}><b>Exhibitions</b></a>
-      <ul class="menu__sub">
-        <li><a href="{% link exhibitions/counterpoint.html %}"{% if page.permalink contains 'exhibitions/counterpoint' %} aria-current="page"{% endif %}>Counterpoint</a></li>
-        <li><a href="{% link exhibitions/tender-cargo.html %}"{% if page.permalink contains 'exhibitions/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
-        <li><a href="{% link exhibitions/graft.html %}"{% if page.permalink contains 'exhibitions/graft' %} aria-current="page"{% endif %}>Graft</a></li>
-      </ul>
+      <details name="tb-navigation"{% if page.section-parent == 'work' %} open{% endif %}>
+        <summary><a href="{% link work.html %}"{% if page.permalink == 'all-work/' %} aria-current="page"{% endif %}>Work</a></summary>
+        <ul class="menu__sub">
+          <li>
+            <details name="work-navigation"{% if page.section == 'exhibitions' %} open{% endif %}>
+              <summary><a href="{% link exhibitions/index.html %}"{% if page.permalink == 'exhibitions/' %} aria-current="page"{% endif %}>Exhibitions</a></summary>
+              <ul class="menu__sub">
+                <li><a href="{% link exhibitions/counterpoint.html %}"{% if page.permalink contains 'counterpoint' %} aria-current="page"{% endif %}>Counterpoint</a></li>
+                <li><a href="{% link exhibitions/tender-cargo.html %}"{% if page.permalink == 'exhibitions/tender-cargo/' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
+                <li><a href="{% link exhibitions/graft.html %}"{% if page.permalink contains 'graft' %} aria-current="page"{% endif %}>Graft</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details name="work-navigation"{% if page.section == 'film-performance' %} open{% endif %}>
+              <summary><a href="{% link film-performance/index.html %}"{% if page.permalink == 'film-performance/' %} aria-current="page"{% endif %}>Film Performance</a></summary>
+              <ul class="menu__sub">
+                <li><a href="{% link film-performance/tender-cargo.html %}"{% if page.permalink == 'film-performance/tender-cargo/' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
+                <li><a href="{% link film-performance/fringe-pvd.html %}"{% if page.permalink contains 'fringe-pvd' %} aria-current="page"{% endif %}>Fringe PVD</a></li>
+                <li><a href="{% link film-performance/waves-shadows.html %}"{% if page.permalink contains 'waves-shadows' %} aria-current="page"{% endif %}>Waves & Shadows</a></li>
+                <li><a href="{% link film-performance/disassemble.html %}"{% if page.permalink contains 'disassemble' %} aria-current="page"{% endif %}>Disassemble</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="{% link 3d/2022-2023.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>Sculptural Garments</a></li>
+          <li><a href="{% link forms/2025.html %}"{% if page.permalink contains 'forms' %} aria-current="page"{% endif %}>Forms</a></li>
+          <li><a href="{% link tapestries/2022-2023.html %}"{% if page.permalink contains 'tapestries' %} aria-current="page"{% endif %}>Tapestries</a></li>
+          <li>
+            <details name="work-navigation"{% if page.section == '2d' %} open{% endif %}>
+              <summary><a href="{% link 2d/index.html %}"{% if page.permalink == '2d/' %} aria-current="page"{% endif %}><span aria-hidden="true">2D</span><span class="u__sr-only">Two-dimensional</span></a></summary>
+              <ul class="menu__sub">
+                <li><a href="{% link 2d/paintings.html %}"{% if page.permalink contains 'paintings' %} aria-current="page"{% endif %}>Paintings on Paper and Fabric</a></li>
+                <li><a href="{% link 2d/prints.html %}"{% if page.permalink contains 'prints' %} aria-current="page"{% endif %}>Prints and Plates</a></li>
+                <li><a href="{% link 2d/encaustic.html %}"{% if page.permalink contains 'encaustic' %} aria-current="page"{% endif %}>Encaustic and Oil Paintings</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </details>
     </li>
     <li>
-      <a href="{% link film-performance/index.html %}"{% if page.permalink == 'film-performance/' %} aria-current="page"{% endif %}{% if page.permalink contains 'film-performance' %} class="parent"{% endif %}><b>Film & Performance</b></a>
-      <ul class="menu__sub">
-        <li><a href="{% link film-performance/tender-cargo.html %}"{% if page.permalink contains 'film-performance/tender-cargo' %} aria-current="page"{% endif %}>Tender Cargo</a></li>
-        <li><a href="{% link film-performance/fringe-pvd.html %}"{% if page.permalink contains 'fringe-pvd' %} aria-current="page"{% endif %}>Fringe PVD</a></li>
-        <li><a href="{% link film-performance/waves-shadows.html %}"{% if page.permalink contains 'waves-shadows' %} aria-current="page"{% endif %}>Waves & Shadows</a></li>
-        <li><a href="{% link film-performance/disassemble.html %}"{% if page.permalink contains 'disassemble' %} aria-current="page"{% endif %}>Disassemble</a></li>
-      </ul>
+      <details name="tb-navigation"{% if page.section-parent == 'about' %} open{% endif %}>
+        <summary>About</summary>
+        <ul class="menu__sub">
+          <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>The artist</a></li>
+          <li><a href="{% link upcoming.md %}"{% if page.permalink contains 'upcoming' %} aria-current="page"{% endif %}>Upcoming exhibitions</a></li>
+          <li><a href="{% link classes.md %}"{% if page.permalink contains 'classes' %} aria-current="page"{% endif %}>Classes & workshops</a></li>
+          <li><a href="https://www.instagram.com/taleenbatalian/" target="_blank" title="Opens new window">Follow on Instagram</a></li>
+        </ul>
+      </details>
     </li>
-    <li>
-      <a href="{% link 3d/2022.html %}"{% if page.permalink contains '3d' %} aria-current="page"{% endif %}>
-        <b><span aria-hidden="true">3D</span><span class="u__sr-only">Three-dimensional</span></b>
-      </a>
-    </li>
-    <li>
-      <a href="{% link tapestries/2022-2023.html %}"{% if page.permalink contains 'tapestries' %} aria-current="page"{% endif %}>
-        <b>Tapestries</b>
-      </a>
-    </li>
-    <li>
-      <!-- We have two current pages with this pattern. Needs to be fixed -->
-      <a href="{% link 2d/index.html %}"{% if page.permalink == '2d/' %} aria-current="page"{% endif %}{% if page.permalink contains '2d' %} class="parent"{% endif %}>
-        <b><span aria-hidden="true">2D</span><span class="u__sr-only">Two-dimensional</span></b>
-      </a>
-      <ul class="menu__sub">
-        {% assign twod_items = site.pages | where: 'section', '2d' | reverse %}
-        {% for item in twod_items %}
-          {% if item.nav_title %}
-          <li><a href="{{ item.permalink | relative_url }}"{% if page.permalink == item.permalink %} aria-current="page"{% endif %}>{{ item.nav_title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </li>
-    <li><a href="{% link about.md %}"{% if page.permalink contains 'about' %} aria-current="page"{% endif %}>About the Artist</a></li>
-    <li><a href="{% link upcoming.md %}"{% if page.permalink contains 'upcoming' %} aria-current="page"{% endif %}>Upcoming Exhibitions</a></li>
-    <li><a href="{% link classes.md %}"{% if page.permalink contains 'classes' %} aria-current="page"{% endif %}>Classes & workshops</a></li>
-    <li><a href="{% link contact.html %}"{% if page.permalink contains 'contact' %} aria-current="page"{% endif %}>Contact the artist</a></li>
-    <li><a href="https://www.instagram.com/taleenbatalian/" target="_blank" title="Opens new window">Follow on Instagram</a></li>
+    <li><a href="{% link contact.html %}"{% if page.permalink contains 'contact' %} aria-current="page"{% endif %}>Contact</a></li>
   </ul>
