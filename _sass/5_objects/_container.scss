@@ -13,9 +13,9 @@
       padding-bottom: $vertical-rhythm;
     }
 
-    @media (min-width: #{ em( bp($mobile-to-desktop-nav) ) }) and (min-height: 48em) {
-      //position: sticky;
-      //top: 0;
+    @media (min-width: #{ em( bp($mobile-to-desktop-nav) ) }) and (min-height: 44em) {
+      position: sticky;
+      top: 0;
     }
   }
 

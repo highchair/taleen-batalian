@@ -1,2 +1,20 @@
 // Body class
 .page {}
+
+.home {
+
+  &__image {
+
+    a {
+      display: block;
+    }
+
+    @include breakpoint-up($mobile-to-desktop-nav) {
+      img {
+        margin: 0 auto;
+        max-height: 90vh;
+        width: auto;
+      }
+    }
+  }
+}

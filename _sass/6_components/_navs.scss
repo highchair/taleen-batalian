@@ -1,7 +1,7 @@
 // Navigations
 
-$nav-v-padding: 1rem;
-$nav-h-padding: 0.5rem;
+$nav-v-padding: 0.75rem;
+$nav-h-padding: 1rem;
 $nav-height: em(62px);
 
 .brand {
@@ -26,14 +26,21 @@ $nav-height: em(62px);
   }
 
   // Any link
-  a {
+  a,
+  summary {
+    color: $color__link--hover;
+
+    &:hover,
+    &:focus {
+      color: $color__link;
+    }
+
     @include breakpoint-down($mobile-to-desktop-nav) {
-      padding: $nav-v-padding $nav-h-padding;
+      padding: $nav-v-padding ($nav-h-padding * 0.5);
     }
 
     @include breakpoint-up($mobile-to-desktop-nav) {
-      display: inline-block;
-      padding: $nav-v-padding 1rem;
+      padding: $nav-v-padding $nav-h-padding;
     }
   }
 
@@ -67,21 +74,22 @@ $nav-height: em(62px);
     &[aria-current] {
       @include breakpoint-down($mobile-to-desktop-nav) {
         background-color: rgba($color__link, 0.25);
-        color: $black;
+        color: $color__link;
         cursor: default;
       }
 
       @include breakpoint-up($mobile-to-desktop-nav) {
-        color: $black;
+        color: $color__link;
 
         &::after {
-          content: ' >'
+          content: ' »';
+          font-weight: $font-custom__sans__bold;
         }
       }
     }
   }
 
-  // Button
+  // Menu Button
   &__toggler {
     @include button-reset();
     background-color: transparent;
@@ -133,34 +141,56 @@ $nav-height: em(62px);
   }
 }
 
-// This site uses sub-menus
+// This site previously used sub-menus, it now uses Details/Summary accordions
 .menu {
 
-  // Hide visually but keep accessible to screenreaders and bots
+  /* Hide visually but keep accessible to screenreaders and bots
   &__sub {
     height: 0;
     overflow: hidden;
-  }
+  }*/
 
-  a {
+  summary > a {
+    display: inline;
+
     @include breakpoint-up($mobile-to-desktop-nav) {
-      padding: ($nav-v-padding * 0.5) 1rem;
+      padding: 0;
     }
   }
 
-  &__sub li > a {
+  /*&__sub li > a {
     &[aria-current] {
       @include breakpoint-down($mobile-to-desktop-nav) {
         background-color: palette('brand-gray');
       }
     }
-  }
+  }*/
 
-  a[aria-current] + &__sub,
+  /*a[aria-current] + &__sub,
   a.parent + &__sub {
     border-left: 2px solid palette('brand-gray');
-    height: auto;
+    //height: auto;
     margin: 0 1rem $vertical-rhythm 1rem;
+  }*/
+
+  summary {
+    cursor: pointer;
+
+    &::marker {
+      color: rgba($color__link, 0.4);
+    }
+  }
+
+  details {
+    &[open] {
+      > summary {
+        font-weight: $font-custom__sans__bold;
+      }
+    }
+
+    li {
+      padding-left: 1rem;
+    }
   }
 }
 

@@ -55,9 +55,25 @@ ol {
   padding: 0;
 }
 
-nav ul, 
-nav ul ul {
-  list-style: none;
+ul { list-style: square; }
+
+ul ul { list-style: disc; }
+
+ul ul ul { list-style: circle; }
+
+ol { list-style: decimal; }
+
+ol ol { list-style: upper-alpha; }
+
+ol ol ol { list-style: upper-roman; }
+
+ol ol ol ol { list-style: lower-alpha; }
+
+ol ol ol ol ol { list-style: lower-roman; }
+
+nav ul,
+nav ol {
+  list-style: none !important;
   margin-left: 0;
 }
 
