@@ -4,6 +4,7 @@ title: 'Tapestries'
 nav_title: '2022-2023'
 meta_title: '2022–2023 | Tapestries'
 section: tapestries
+section-parent: work
 description: 
 permalink: tapestries/2022-2023/
 body-class: portfolio
@@ -12,4 +13,11 @@ year1: 2022
 year2: 2023
 ---
 
-{% include portfolio-loop-tapestries.html %}
+{%- assign arts1 = site.data.tapestries | where: 'year', page.year1 -%}
+{%- if page.year2 -%}
+  {% assign arts2 = site.data.tapestries | where: 'year', page.year2 %}
+  {% assign items = arts1 | concat: arts2 %}
+{%- else -%}
+  {% assign items = arts1 %}
+{%- endif -%}
+{%- include portfolio-loop.html -%}
