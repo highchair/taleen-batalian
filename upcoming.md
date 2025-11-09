@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Upcoming Exhibitions
+section-parent: about
 description: 
 permalink: /upcoming/
 body-class: upcoming

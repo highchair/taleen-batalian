@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Classes and Workshops
+section-parent: about
 description: 
 permalink: /classes-workshops/
 body-class: classes

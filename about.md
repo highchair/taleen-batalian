@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+section-parent: about
 description: 
 permalink: /about/
 body-class: about
