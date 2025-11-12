@@ -169,6 +169,13 @@ a:not([href]):not([tabindex]) {
   outline: 0 !important;
 }
 
+// Opt in to new and upcoming browser-based view transitions
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
 // Remove all animations and transitions for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {
   * {

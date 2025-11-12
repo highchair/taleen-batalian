@@ -6,6 +6,27 @@
 #   caption: ''
 #   sold: no
 
+- slug: what-it-is-what-it-was
+  title: 'What It Was, What It Is'
+  media: painting
+  caption: 'Gouache, intaglio, charcoal pencil, gesso on paper, 24&quot; x 18&quot;'
+  year: 2025
+  sold: no
+
+- slug: what-it-is-what-it-was-part2
+  title: 'What It Was, What It Is (Part II)'
+  media: painting
+  caption: 'Gouache, linocut, acrylic, charcoal pencil on paper, 24&quot; x 18&quot;'
+  year: 2025
+  sold: no
+
+- slug: what-it-is-what-it-was-part3
+  title: 'What It Was, What It Is (Part III)'
+  media: painting
+  caption: 'Gouache, linocut, ink, gold leaf on paper, 24&quot; x 18&quot;'
+  year: 2025
+  sold: no
+
 - slug: relic-nose
   title: 'Relic (Nose)'
   media: prints

@@ -47,10 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Load the anecdote form immediately if someone clicks the loader button
   loadMessageForm();
 
-  // The Image Gallery is initialized by HTML on the page, i.e. the value inside "data-fslightbox"
-  fsLightboxInstances['tb-lightbox'].props.slideshowTime = 6000;
-  fsLightboxInstances['tb-lightbox'].props.zoomIncrement = 1.5;
-
   // Expand / Collapse utility
   //
   //Minimum expected markup:
@@ -96,4 +92,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     toggleBtn.textContent = isHiding ? 'Show Sold' : 'Hide Sold';
   });
+
+  // Put this last. If no lightbox element is found, an error is thrown that denies following functions to fire
+  // The Image Gallery is initialized by HTML on the page, i.e. the value inside "data-fslightbox"
+  fsLightboxInstances['tb-lightbox'].props.slideshowTime = 6000;
+  fsLightboxInstances['tb-lightbox'].props.zoomIncrement = 1.5;
 });

@@ -22,6 +22,7 @@ $nav-height: em(62px);
 
 .n {
   @include breakpoint-down($mobile-to-desktop-nav) {
+    font-size: 112.5%;
     text-align: center;
   }
 
@@ -144,7 +145,7 @@ $nav-height: em(62px);
 // This site previously used sub-menus, it now uses Details/Summary accordions
 .menu {
 
-  /* Hide visually but keep accessible to screenreaders and bots
+  /* Hide visually but keep accessible to screen readers and bots
   &__sub {
     height: 0;
     overflow: hidden;
@@ -182,14 +183,27 @@ $nav-height: em(62px);
   }
 
   details {
+
     &[open] {
+
+      @include breakpoint-down($mobile-to-desktop-nav) {
+        border-top: 1px solid $color__borders;
+        border-bottom: 1px solid $color__borders;
+
+        ul {
+          margin: 0 1.5rem;
+        }
+      }
+
       > summary {
         font-weight: $font-custom__sans__bold;
       }
     }
 
     li {
-      padding-left: 1rem;
+      @include breakpoint-up($mobile-to-desktop-nav) {
+        padding-left: 1rem;
+      }
     }
   }
 }
